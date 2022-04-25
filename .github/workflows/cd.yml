@@ -1,6 +1,6 @@
 on:
   push:
-    paths:
+    paths-ignore:
     - '**/*.md'
 
 concurrency:
@@ -10,6 +10,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
     steps:
     - name: Create Deployment
       uses: bobheadxi/deployments@v0.6.2
@@ -33,11 +34,10 @@ jobs:
     # cache-control of 10 mins because we *need* to be able to update
     # this and have people see the results can be fixed well with a static site builder
     - run: |
-        aws s3 sync . s3://www.tea.xyz \
+        aws s3 sync public s3://www.tea.xyz \
           --metadata-directive REPLACE \
           --cache-control max-age=600 \
           --exclude '.git/*' --exclude '.github/*' \
-          --exclude pour.sh \
           --exclude '*.md' \
           --delete
 

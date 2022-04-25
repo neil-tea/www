@@ -1,0 +1,264 @@
+/*General*/
+
+body{
+  background-color: #2B3033;
+}
+
+.container,
+.top-nav{
+  max-width: 1140px;
+}
+
+.row{
+  width: 100%;
+  margin: 0 !important;
+}
+
+.container{
+  padding: 80px 20px;
+  z-index: 50;
+}
+
+.hero{
+  padding: 80px 0px;
+}
+
+#why-tea{
+  margin-top: 80px;
+}
+
+@media only screen and (min-width: 600px) {
+  .hero-image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .navbar{
+    background-color: black;
+  }
+
+  #tea-steam-1{
+    position: absolute;
+    z-index: 0;
+    margin-top: -100px;
+  }
+
+  #tea-steam-2{
+    position: absolute;
+    z-index: 0;
+    right: 0px;
+    display: block;
+    margin-top: 100px;
+  }
+
+  #tea-steam-dark-1{
+    position: absolute;
+    z-index: 0;
+  }
+
+  #tea-steam-dark-2{
+    position: absolute;
+    z-index: 0;
+    right: 0px;
+    top: 0px;
+  }
+
+}
+
+@media only screen and (max-width: 600px) {
+  .hero-image{
+    display: none;
+  }
+
+  .navbar{
+    background-color: black;
+  }
+
+  .collapse{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.1s ease-in-out;
+  }
+
+  #tea-steam-1{
+    position: absolute;
+    z-index: 0;
+    width: 250px;
+    margin-top: -100px;
+  }
+
+  #tea-steam-2{
+    position: absolute;
+    z-index: 0;
+    width: 200px;
+    right: 0px;
+    display: block;
+    margin-top: 300px;
+  }
+
+  #tea-steam-dark-1{
+    position: absolute;
+    z-index: 0;
+    width: 500px;
+  }
+
+  #tea-steam-dark-2{
+    display: none;
+  }
+}
+
+
+/*Typography*/
+
+h1, h2, h3, h4, h5{
+  font-family: 'Playfair Display', serif;
+  color: #fff;
+  z-index:200;
+}
+
+h1{
+  font-size: 48px;
+}
+
+h2{
+  font-size: 38px;
+}
+
+h3{
+  font-size: 32px;
+}
+
+h6{
+  color: white;
+  font-weight: 600;
+}
+
+p{
+  font-size: 16px;
+  color: #fff;
+}
+
+.boilerplate{
+  font-size: 14px;
+}
+
+label{
+  color: #fff;
+}
+
+.yellow{
+  color:#DDFC76;
+}
+
+.charcoal{
+  color:#2B3033;
+}
+
+.nav-link:hover{
+  color: #54BAAB;
+}
+
+/*Buttons*/
+
+.btn-primary{
+  background-color: #54BAAB;
+  border: none;
+  border-radius: 30px;
+  width: 280px;
+  padding: 10px 0px;
+  transition: 0.2s ease-in-out;
+}
+
+.btn-primary:hover{
+  background-color: #62CFBF;
+}
+
+#whitepaper-btn{
+  border: 2px solid #fff !important;
+  background-color: #2B3033;
+}
+
+.mission,
+.community-container{
+  background-color: #54BAAB;
+}
+
+.com-card{
+  background-color: #62C8B9 !important;
+  border: 2px solid #7CEEDD;
+  border-radius: 3px;
+  height: 185px;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+}
+
+.com-card:hover{
+  cursor:pointer;
+  box-shadow: 0px 0px 12px rgba(81, 92, 92, 0.3);
+  transform: scale(1.02);
+}
+
+.community-icon{
+  width: 30%
+}
+
+.card-body{
+  background-color: #2B3033;
+  border: 1px solid #DCDBDB;
+  border-radius: 3px;
+  box-shadow: 0px 0px 24px #16191B;
+}
+
+hr{
+  border: 1px solid #fff;
+}
+
+code{
+  color:#DDFC76;
+}
+@media only screen and (min-width: 600px) {
+  .partner-img{
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .partner-img{
+    width: 75%;
+  }
+}
+
+#binance{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-link{
+  color:white;
+}
+
+.email-field{
+  width:100%;
+  border: none;
+  border-radius: 30px;
+  background-color: #3F4346;
+  padding: 10px 20px;
+  color: white;
+  transition: 0.1s ease-in-out;
+}
+
+.email-field:focus{
+  border: 1px solid #54BAAB !important;
+  box-shadow: 0px 0px 4px rgba(84, 186, 171, 0.5);
+}
+
+input{
+  outline: none !important;
+}
+
+.email-submit{
+  width: 100%;
+}
