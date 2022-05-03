@@ -9,6 +9,26 @@ body{
   max-width: 1280px;
 }
 
+.navbar{
+  background-color: black;
+}
+
+#tea-steam-dark-1{
+  z-index:0;
+  position: absolute;
+}
+
+#tea-steam-dark-2{
+  z-index: 9;
+  position: absolute;
+  right: 0px;
+  width: 30%;
+}
+
+.rounded-pill{
+  background-color: #7EC9C0 !important;
+}
+
 .row{
   width: 100%;
   margin: 0 !important;
@@ -32,9 +52,6 @@ body{
     margin-right: auto;
   }
 
-  .navbar{
-    background-color: black;
-  }
 
   @media only screen and (max-width: 600px) {
 
@@ -53,6 +70,14 @@ body{
       margin-top: 50px;
     }
 
+    #tea-steam-dark-1{
+      width:90%;
+    }
+
+    #tea-steam-dark-2{
+      display:none;
+    }
+
     .hero-image{
       display:none;
     }
@@ -62,6 +87,10 @@ body{
       margin-left: auto;
       margin-right: auto;
       width: 70%;
+    }
+
+    h1{
+      font-size: 3.5rem !important;
     }
 
   }
@@ -115,18 +144,6 @@ body{
 .web2-tower{
   width: 50%;
 }
-
-  #tea-steam-dark-1{
-    position: absolute;
-    z-index: 0;
-  }
-
-  #tea-steam-dark-2{
-    position: absolute;
-    z-index: 0;
-    right: 0px;
-    top: 0px;
-  }
 
   /*Typorgaphy*/
 
@@ -261,4 +278,14 @@ body{
       }
 
       .footer{
+      }
+
+      /*Whitepaper Page*/
+
+      iframe {
+          display: block;       /* iframes are inline by default */
+          background: #000;
+          border: none;         /* Reset default border */
+          height: 100vh;
+          width:100%;
       }
