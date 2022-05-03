@@ -1,5 +1,9 @@
 /*General*/
 
+html {
+    -webkit-hyphenate-character: '-';
+}
+
 body{
   background-color: #2B3033;
 }
@@ -231,7 +235,7 @@ body{
   h3,
   h4,
   h5{
-    font-family: 'Playfair Display', serif !important;
+    font-family: 'Playfair Display', serif, system-ui !important;
     color: #fff;
     z-index:200;
   }
