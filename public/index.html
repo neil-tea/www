@@ -35,13 +35,13 @@
 
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top my-auto" >
+    <nav class="navbar bg-dark navbar-expand-lg navbar-dark sticky-top my-auto" >
       <div class="container-fluid top-nav">
         <a class="navbar-brand" href="#"><img src="Images/tea-main-logo.svg" style="width:100px;"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse pt-4 pb-4" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse pt-2 pb-2" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto me-4 my-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -390,6 +390,14 @@ authenticate your Github with tea. </p>
          console.error(e)
        }
      </script>
+
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+     <script>
+          $(window).scroll(function(){
+          $('nav').toggleClass('scrolled', $(this).scrollTop() > 100);
+          });
+        </script>
 
   </body>
 </html>

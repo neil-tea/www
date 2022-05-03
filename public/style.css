@@ -13,6 +13,14 @@ body{
   background-color: black;
 }
 
+.bg-dark {
+    background:transparent !important;
+    transition:0.2s ease-in-out;
+}
+.bg-dark.scrolled {
+    background-color:#000 !important;
+}
+
 #tea-steam-dark-1{
   z-index:0;
   position: absolute;
