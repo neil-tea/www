@@ -40,6 +40,7 @@ jobs:
           --metadata-directive REPLACE \
           --cache-control max-age=600 \
           --exclude '.git/*' --exclude '.github/*' \
+          --exclude 'pour.sh' \
           --exclude '*.md' \
           --delete
 
