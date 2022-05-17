@@ -15,7 +15,7 @@ sh <(curl tea.xyz) https://github.com/teaxyz/www
 
 Alternatively:
 
-```
+```sh
 npx watch-http-server . -p8000 -o -a localhost
 open localhost:8000
 ```
