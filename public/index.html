@@ -154,7 +154,7 @@
             <a class="nav-link" href="https://linktr.ee/teaxyz">Linktree</a>
           </li>
         </ul>
-        <a class="btn btn-primary mt-lg-0 mt-md-0 mt-sm-4 mt-4" href="https://github.com/apps/tea-xyz/installations/new"
+        <a class="btn btn-primary auth-btn mt-lg-0 mt-md-0 mt-sm-4 mt-4" href="https://github.com/apps/tea-xyz/installations/new"
           role="button">Authenticate with tea<span class="badge rounded-pill bg-primary ms-3"><span
               id="count1">287</span></span></a>
       </div>
@@ -175,7 +175,7 @@
             decades, big tech has made trillions off the generosity of visionary developers and web pioneers… never
             thanking, never mentioning, and certainly never paying. At tea, we’re brewing something to change that by
             enabling developers (you) to continue doing what you love, while earning what you deserve.</p>
-          <a class="btn btn-primary mb-3" href="https://github.com/apps/tea-xyz/installations/new"
+          <a class="btn btn-primary auth-btn mb-3" href="https://github.com/apps/tea-xyz/installations/new"
             role="button">Authenticate with tea<span class="badge rounded-pill bg-primary ms-3"><span
                 id="count2">287</span></span></a><br>
           <a class="btn btn-primary disabled mb-sm-5 mb-md-5 mb-5" id="whitepaper-btn" href="whitepaper.html"
@@ -190,18 +190,20 @@
               <p class="card-title display-1"
                 style="color: #54BAAB; text-align:center; font-size: 6rem; font-family: 'Playfair Display', serif"><span
                   id="count"></span></p>
-              <p class="text-center" style="text-transform:uppercase; color:#54BAAB;">Developers Authenticated</p>
-              <h5 class="mb-3" style="text-align:center; font-size:2rem;">Join the communi'<span
+              <p class="text-center" id="count-sub-text" style="text-transform:uppercase; color:#54BAAB;">Developers Authenticated</p>
+              <h5 class="mb-3" style="text-align:center; font-size:2rem;"><span id="communitea">Join the<span> communi'<span
                   style="color:#54BAAB;">tea</span></h5>
-              <p class="card-text lead" style="text-align:center;">The revolution is here. Be among the first to
-                authenticate your Github with tea. </p>
-              <p style="text-align:center;">Early-adoption developers will be entitled a variety of exciting rewards,
+              <p class="card-text lead" id="revolution-text" style="text-align:center;">The revolution is here. Be among the first to authenticate your Github with tea. </p>
+              <p style="text-align:center;" id="auth-body-text">Early-adoption developers will be entitled a variety of exciting rewards,
                 including minted NFT certificates. Take a sip while it’s hot!</p>
             </div>
-            <div class="" style="background-color:#44494B; border-radius:5px;">
+            <div class="box-auth-false">
               <p class="text-center my-auto p-3">This is your chance to be early! <a
                   style="color:#54BAAB; text-decoration:none;"
                   href="https://github.com/apps/tea-xyz/installations/new"><strong>Authenticate now</strong></a>.</p>
+            </div>
+            <div class="box-auth-true">
+              <p class="text-center my-auto p-3" style="color:#23282C;"><i class="bi bi-check-circle-fill lead pe-2" style="color:#23282C;"></i>Authenticated as <span id="auth-username">[username]</span></p>
             </div>
           </div>
         </div>
