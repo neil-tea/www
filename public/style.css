@@ -8,6 +8,53 @@ body{
   background-color: #2B3033;
 }
 
+/*Post Authentication Box*/
+
+/*Directions for Jacob:
+
+For authenticated users:
+
+* .box-auth-true = display:block;
+* .box-auth-false = display: none;
+* #auth-username = editInnerHTML to show username/email
+* #count = editInnerHTML to show user's authentication number
+* #count-sub-text = editInnerHTML to read "YOUR AUTHENTICATION NUMBER"
+* #communitea = editInnerHTML to read "Thanks for joining our"
+* #revolution-text = editInnerHTML to read "Now stay tuned! As an early authenticator, you’ll be entitled to a variety of exciting rewards, including minted NFT certificates."
+* #auth-body-text = display: none;
+* .rounded-pill = display: none;
+* .auth-btn = editInnerHTML to read "Configure GitHub App"
+
+*/
+
+/*Begin Auth Module*/
+
+.box-auth-true{
+  background-color: #54BAAB !important;
+  border: 1.5px solid #13FBD9 !important;
+  box-shadow: 0px 0px 5px #13FBD9 !important;
+  border-radius: 5px;
+  display: none;
+}
+
+.box-auth-false{
+  background-color:#44494B;
+  border-radius:5px;
+  display: block;
+}
+
+#auth-username{
+  color: white;
+  text-decoration: underline;
+}
+
+#count-sub-text{
+  text-transform: uppercase;
+}
+
+.rounded-pill{
+}
+
 .navbar-dark .navbar-toggler{
   border:none;
 }
