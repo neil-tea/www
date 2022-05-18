@@ -42,14 +42,6 @@
   <meta property="og:description" content="something new is brewing." />
   <meta property="og:image" content="https://tea.xyz/cover.png" />
   <meta property="og:image:alt" content="sh &lt;(curl tea.xyz)" />
-
-  <script>
-    const q = window.location.search.match(/[\^\?&]store=[^&]*/)
-    if (q) {
-      localStorage.signup = q[0].split('=')[1]
-      window.location.replace(`${window.location.origin}${window.location.pathname}`)
-    }
-  </script>
 </head>
 
 <body>
