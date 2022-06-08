@@ -125,13 +125,50 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
   }
 </script>
 
+<!-- GDPR Popup -->
 <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "c9ohlhyxzf");
+    window.onload = function () {
+        OpenBootstrapPopup();
+    };
+    function OpenBootstrapPopup() {
+        $("#myModal").modal('show');
+    }
 </script>
+
+<div class="modal fade" id="myModal" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content p-3">
+      <div class="modal-body">
+        <h5 class="modal-title charcoal display-6 mb-3" style="line-height: 1.2;">We serve our tea with cookies.</h5>
+        <p class="charcoal mb-5">We're doing our best to reach every developer on the face of this planet, so we use cookies for both our analytics and digital advertising initiatives. We also collect contact information via the subscribe form in our footer, as well as during our developer authentication flow. If you're not in the mood for cookies, please click "disable cookies" or modify your browser settings accordingly. You can learn more about how we use collected information by reading our <a class="teal">privacy policy<a>.</p>
+        <a class="btn btn-primary mb-3" role="button" data-dismiss="modal" data-target="#myModal" id="accept-cookie">Accept all cookies</a><br>
+        <a class="btn btn-primary mb-3" data-dismiss="modal" aria-label="Close" id="disable-cookie"
+            role="button"><span class="teal">Disable Cookies</span></a>
+        <p class="small" style="color:#B7C7C8">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--
+<div class="offcanvas offcanvas-bottom p-lg-5 p-sm-1 p-1" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+  <div class="row">
+    <div class="col-lg-8 col-sm-12 col-12">
+      <div class="offcanvas-body charcoal small">
+        <h5 class="offcanvas-title charcoal display-6 mb-3" id="offcanvasBottomLabel">We serve our tea with cookies.</h5>
+        <p class="charcoal">We're doing our best to reach every developer on the face of this planet, so we use cookies for both our analytics and digital advertising initiatives. We also collect contact information via the subscribe form in our footer, as well as during our developer authentication flow. If you're not in the mood for cookies, please click "disable cookies" or modify your browser settings accordingly. You can learn more about how we use collected information by reading our <a class="teal">privacy policy<a>.</p>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column;" class="ms-auto col-lg-4 col-sm-12 col-12">
+      <div class="cookie-buttons">
+        <a class="btn btn-primary mb-3" role="button" data-bs-dismiss="offcanvas" aria-label="Close" id="accept-cookie">Accept all cookies</a><br>
+        <a class="btn btn-primary mb-3" data-bs-dismiss="offcanvas" aria-label="Close" id="disable-cookie"
+          role="button"><span class="teal">Disable Cookies</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End GDPR Compliance -->
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q3M5LVH76F"></script>
   <script>

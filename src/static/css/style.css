@@ -221,6 +221,9 @@ For authenticated users:
       font-size: 3.5rem !important;
     }
 
+    .offcanvas-bottom{
+      height: 70%;
+    }
   }
 
 
@@ -351,6 +354,17 @@ For authenticated users:
       #whitepaper-btn{
         border: 2px solid #fff !important;
         background-color: #2B3033;
+      }
+
+      #disable-cookie{
+        background-color: #ffffff !important;
+        box-shadow:0px 0px 0px 2px #54BAAB inset;
+      }
+
+      #disable-cookie:hover{
+        background-color: #E6E7E8 !important;
+        box-shadow: none;
+        color: #2B3033 !important;
       }
 
       .mission,
