@@ -35,3 +35,9 @@ title = 'Equitable Open-Source for Web3'
     title = 'linktree'
     url = 'https://linktr.ee/teaxyz'
     weight = 6
+  [[menu.main]]
+    identifier = 'FAQ'
+    name = 'FAQ'
+    title = 'FAQ'
+    url = '/#faq'
+    weight = 7

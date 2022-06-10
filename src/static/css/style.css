@@ -143,6 +143,7 @@ For authenticated users:
 #tea-steam-dark-1{
   z-index:0;
   position: absolute;
+  margin-top: 200px;
 }
 
 #tea-steam-dark-2{
@@ -306,6 +307,11 @@ For authenticated users:
 
   .teal{
     color: #54BAAB;
+  }
+
+  a{
+    color: #54BAAB;
+    text-decoration: none;
   }
 
       .btn-primary{
