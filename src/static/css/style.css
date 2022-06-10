@@ -370,6 +370,7 @@ For authenticated users:
         border:none;
         outline:none;
         box-shadow: none;
+        font-weight: bold;
       }
 
       .accordion-body{
