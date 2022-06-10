@@ -316,7 +316,7 @@ For authenticated users:
 
   a:hover{
     color: #54BAAB;
-    text-decoration: underline;
+    text-decoration: none;
   }
 
       .btn-primary{
