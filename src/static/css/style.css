@@ -319,6 +319,8 @@ For authenticated users:
     text-decoration: none;
   }
 
+
+
       .btn-primary{
         background-color: #54BAAB;
         border: none;
@@ -387,6 +389,14 @@ For authenticated users:
       .accordion-body{
         background-color: #23282C;
         color: #fff;
+      }
+
+      .accordion-button::after{
+        display:none;
+      }
+
+      .accordion-body{
+        font-weight:300;
       }
 
       hr{
