@@ -343,6 +343,40 @@ For authenticated users:
         box-shadow: 0px 0px 24px #16191B;
       }
 
+      .accordion{
+        border: 2px solid #DCDBDB;
+        border-radius: 3px;
+        box-shadow: 0px 0px 24px #16191B;
+      }
+
+      .accordion-item{
+        border:none;
+      }
+
+      .accordion-button{
+        background-color: #2B3033;
+        color: #fff;
+        outline: none;
+        box-shadow: none;
+        border:none;
+      }
+
+      .accordion-button:not(.collapsed){
+        background-color: #54BAAB;
+        color: #2B3033;
+      }
+
+      .accordion-button:focus{
+        border:none;
+        outline:none;
+        box-shadow: none;
+      }
+
+      .accordion-body{
+        background-color: #23282C;
+        color: #fff;
+      }
+
       hr{
         border: 1px solid #fff;
       }
@@ -465,3 +499,10 @@ For authenticated users:
           display: block;
         }
       }
+
+
+/*Cookie Yes*/
+
+.cky-consent-container .cky-consent-bar{
+  box-shadow: 0px 0px 0px !important;
+}
