@@ -314,6 +314,11 @@ For authenticated users:
     text-decoration: none;
   }
 
+  a:hover{
+    color: #54BAAB;
+    text-decoration: underline;
+  }
+
       .btn-primary{
         background-color: #54BAAB;
         border: none;
