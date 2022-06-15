@@ -33,6 +33,10 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
+      # Interestingly, `cdk` uses a hash of the directory path, and if it doesn't exist, it can't hash it.
+      - name: lol wut? don't look at this.
+        run: mkdir public
+
       - name: destroy the stack on AWS
         run: yarn destroy
         working-directory: .cdk
