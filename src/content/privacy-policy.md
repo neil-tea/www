@@ -32,7 +32,7 @@ Please read this policy carefully to understand our policies and practices regar
 
 Our Website is not intended for children under 13 years of age. No one under age 13 may provide any information to or on the Website. We do not knowingly collect personal information from children under 13. If you are under 13, do not use or provide any information on this Website or on or through any of its features. If we learn we have collected or received personal information from a child under 13 without verification of parental consent, we will delete that information. If you believe we might have any information from or about a child under 13, please contact us at:
 
-[contact@tea.xyz](mailto:contact@tea.xyz)
+[hello@tea.xyz](mailto:hello@tea.xyz)
 
 #### Information We Collect About You and How We Collect It
 
@@ -132,4 +132,4 @@ It is our policy to post any changes we make to our privacy policy on this page.
 
 To ask questions or comment about this privacy policy and our privacy practices, contact us at:
 
-[contact@tea.xyz](mailto:contact@tea.xyz)
+[hello@tea.xyz](mailto:hello@tea.xyz)
