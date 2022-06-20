@@ -10,9 +10,9 @@ Last modified: June 17, 2022
 
 #### Introduction
 
-TEA INC. ( **&quot;Company&quot;** or **&quot;We&quot;** ) respect your privacy and are committed to protecting it through our compliance with this policy.
+TEA INC. (**&quot;Company&quot;** or **&quot;We&quot;**) respect your privacy and are committed to protecting it through our compliance with this policy.
 
-This policy describes the types of information we may collect from you or that you may provide when you visit the website [https://tea.xyz/](https://tea.xyz/) (our &quot; **Website**&quot;) and our practices for collecting, using, maintaining, protecting, and disclosing that information.
+This policy describes the types of information we may collect from you or that you may provide when you visit the website [https://tea.xyz/](https://tea.xyz/) (our &quot;**Website**&quot;) and our practices for collecting, using, maintaining, protecting, and disclosing that information.
 
 This policy applies to information we collect:
 
@@ -32,13 +32,13 @@ Please read this policy carefully to understand our policies and practices regar
 
 Our Website is not intended for children under 13 years of age. No one under age 13 may provide any information to or on the Website. We do not knowingly collect personal information from children under 13. If you are under 13, do not use or provide any information on this Website or on or through any of its features. If we learn we have collected or received personal information from a child under 13 without verification of parental consent, we will delete that information. If you believe we might have any information from or about a child under 13, please contact us at:
 
-contact@tea.xyz
+[contact@tea.xyz](mailto:contact@tea.xyz)
 
 #### Information We Collect About You and How We Collect It
 
 We collect several types of information from and about users of our Website, including information:
 
-- By which you may be personally identified, such as name, postal address, e-mail address, telephone number, or any other identifier by which you may be contacted online or offline (&quot; **personal information**&quot;);
+- By which you may be personally identified, such as name, postal address, e-mail address, telephone number, or any other identifier by which you may be contacted online or offline (&quot;**personal information**&quot;);
 - That is about you but individually does not identify you; and/or
 - About your internet connection, the equipment you use to access our Website, and usage details.
 
@@ -57,7 +57,7 @@ The information we collect on or through our Website may include:
 - Your responses to surveys that we might ask you to complete for research purposes.
 - Your search queries on the Website.
 
-You also may provide information to be published or displayed (hereinafter, &quot; **posted**&quot;) on public areas of the Website, or transmitted to other users of the Website or third parties (collectively, &quot; **User Contributions**&quot;). Your User Contributions are posted on and transmitted to others at your own risk. Although we limit access to certain pages, please be aware that no security measures are perfect or impenetrable. Additionally, we cannot control the actions of other users of the Website with whom you may choose to share your User Contributions. Therefore, we cannot and do not guarantee that your User Contributions will not be viewed by unauthorized persons.
+You also may provide information to be published or displayed (hereinafter, &quot;**posted**&quot;) on public areas of the Website, or transmitted to other users of the Website or third parties (collectively, &quot;**User Contributions**&quot;). Your User Contributions are posted on and transmitted to others at your own risk. Although we limit access to certain pages, please be aware that no security measures are perfect or impenetrable. Additionally, we cannot control the actions of other users of the Website with whom you may choose to share your User Contributions. Therefore, we cannot and do not guarantee that your User Contributions will not be viewed by unauthorized persons.
 
 #### Information We Collect Through Automatic Data Collection Technologies
 
@@ -122,7 +122,7 @@ We strive to provide you with choices regarding the personal information you pro
 
 - **Tracking Technologies and Advertising.** You can set your browser to refuse all or some browser cookies, or to alert you when cookies are being sent. If you disable or refuse cookies, please note that some parts of this site may then be inaccessible or not function properly.
 
-We do not control third parties&#39; collection or use of your information to serve interest-based advertising. However these third parties may provide you with ways to choose not to have your information collected or used in this way. You can opt out of receiving targeted ads from members of the Network Advertising Initiative (&quot; **NAI**&quot;) on the NAI&#39;s [website](http://www.networkadvertising.org/managing/opt_out.asp).
+We do not control third parties&#39; collection or use of your information to serve interest-based advertising. However these third parties may provide you with ways to choose not to have your information collected or used in this way. You can opt out of receiving targeted ads from members of the Network Advertising Initiative (&quot;**NAI**&quot;) on the NAI&#39;s [website](http://www.networkadvertising.org/managing/opt_out.asp).
 
 #### Changes to Our Privacy Policy
 
@@ -132,4 +132,4 @@ It is our policy to post any changes we make to our privacy policy on this page.
 
 To ask questions or comment about this privacy policy and our privacy practices, contact us at:
 
-contact@tea.xyz
+[contact@tea.xyz](mailto:contact@tea.xyz)
