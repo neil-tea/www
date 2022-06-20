@@ -113,7 +113,7 @@ We may disclose personal information that we collect or you provide as described
 We may also disclose your personal information:
 
 - To comply with any court order, law, or legal process, including to respond to any government or regulatory request.
-- To enforce or apply our [terms of use](http://tea.xyz/terms-of-use) and other agreements, including for billing and collection purposes.
+- To enforce or apply our [terms of use](https://tea.xyz/terms-of-use) and other agreements, including for billing and collection purposes.
 - If we believe disclosure is necessary or appropriate to protect the rights, property, or safety of TEA INC., our customers, or others.
 
 #### Choices About How We Use and Disclose Your Information
@@ -122,7 +122,7 @@ We strive to provide you with choices regarding the personal information you pro
 
 - **Tracking Technologies and Advertising.** You can set your browser to refuse all or some browser cookies, or to alert you when cookies are being sent. If you disable or refuse cookies, please note that some parts of this site may then be inaccessible or not function properly.
 
-We do not control third parties&#39; collection or use of your information to serve interest-based advertising. However these third parties may provide you with ways to choose not to have your information collected or used in this way. You can opt out of receiving targeted ads from members of the Network Advertising Initiative (&quot;**NAI**&quot;) on the NAI&#39;s [website](http://www.networkadvertising.org/managing/opt_out.asp).
+We do not control third parties&#39; collection or use of your information to serve interest-based advertising. However these third parties may provide you with ways to choose not to have your information collected or used in this way. You can opt out of receiving targeted ads from members of the Network Advertising Initiative (&quot;**NAI**&quot;) on the NAI&#39;s [website](https://www.networkadvertising.org/managing/opt_out.asp).
 
 #### Changes to Our Privacy Policy
 
