@@ -11,7 +11,7 @@ Last Modified: June 17, 2022
 
 These terms of use are entered into by and between You and TEA INC. (&quot;**Company**,&quot; &quot;**we**,&quot; or &quot;**us**&quot;). The following terms and conditions, together with any documents they expressly incorporate by reference (collectively, &quot;**Terms of Use**&quot;), govern your access to and use of https://tea.xyz/, including any content, functionality and services offered on or through https://tea.xyz/ (the &quot;**Website**&quot;), whether as a guest or a registered user.
 
-Please read the Terms of Use carefully before you start to use the Website. **By using the Website, you accept and agree to be bound and abide by these Terms of Use and our Privacy Policy, found at** [http://tea.xyz/privacy-policy/](https://tea.xyz/privacy-policy/) **, incorporated herein by reference.** If you do not want to agree to these Terms of Use or the Privacy Policy, you must not access or use the Website.
+Please read the Terms of Use carefully before you start to use the Website. **By using the Website, you accept and agree to be bound and abide by these Terms of Use and our Privacy Policy, found at** [https://tea.xyz/privacy-policy/](https://tea.xyz/privacy-policy/) **, incorporated herein by reference.** If you do not want to agree to these Terms of Use or the Privacy Policy, you must not access or use the Website.
 
 #### Changes to the Terms of Use
 
@@ -44,7 +44,7 @@ These Terms of Use permit you to use the Website for your personal, non-commerci
 - You may store files that are automatically cached by your Web browser for display enhancement purposes.
 - You may print one copy of a reasonable number of pages of the Website for your own personal, non-commercial use and not for further reproduction, publication or distribution.
 - If we provide desktop, mobile or other applications for download, you may download a single copy to your computer or mobile device solely for your own personal, non-commercial use, provided you agree to be bound by our end user license agreement for such applications.
-- If we provide [Social Media Features](https://tea.xyz/) with certain content, you may take such actions as are enabled by such features.
+- If we provide [Social Media Features](https://tea.xyz/#community) with certain content, you may take such actions as are enabled by such features.
 
 You must not:
 
@@ -68,7 +68,7 @@ You may use the Website only for lawful purposes and in accordance with these Te
 
 - In any way that violates any applicable federal, state, local or international law or regulation (including, without limitation, any laws regarding the export of data or software to and from the US or other countries).
 - For the purpose of exploiting, harming or attempting to exploit or harm minors in any way by exposing them to inappropriate content, asking for personally identifiable information or otherwise.
-- To send, knowingly receive, upload, download, use or re-use any material which does not comply with the [Content Standards](#Content_Standards) set out in these Terms of Use.
+- To send, knowingly receive, upload, download, use or re-use any material which does not comply with the Content Standards set out in these Terms of Use.
 - To transmit, or procure the sending of, any advertising or promotional material, including any &quot;junk mail,&quot; &quot;chain letter,&quot; &quot;spam,&quot; or any other similar solicitation.
 - To impersonate or attempt to impersonate the Company, a Company employee, another user or any other person or entity (including, without limitation, by using e-mail addresses or screen names associated with any of the foregoing).
 - To engage in any other conduct that restricts or inhibits anyone&#39;s use or enjoyment of the Website, or which, as determined by us, may harm the Company or users of the Website, or expose them to liability.
