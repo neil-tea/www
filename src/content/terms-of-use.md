@@ -229,4 +229,4 @@ This website is operated by TEA INC., 151 Calle San Francisco, Suite 200, San Ju
 
 All notices of copyright infringement claims should be sent to us.
 
-All other feedback, comments, requests for technical support and other communications relating to the Website should be directed to: contact@tea.xyz.
+All other feedback, comments, requests for technical support and other communications relating to the Website should be directed to: [hello@tea.xyz](mailto:hello@tea.xyz).
