@@ -10,7 +10,7 @@ Last modified: June 17, 2022
 
 #### Introduction
 
-TEA INC. (**&quot;Company&quot;** or **&quot;We&quot;**) respect your privacy and are committed to protecting it through our compliance with this policy.
+tea.inc. (**&quot;Company&quot;** or **&quot;We&quot;**) respect your privacy and are committed to protecting it through our compliance with this policy.
 
 This policy describes the types of information we may collect from you or that you may provide when you visit the website [https://tea.xyz/](https://tea.xyz/) (our &quot;**Website**&quot;) and our practices for collecting, using, maintaining, protecting, and disclosing that information.
 
