@@ -305,6 +305,18 @@ For authenticated users:
     color: #54BAAB;
   }
 
+  ul{
+    color: #fff;
+  }
+
+  a{
+    color: #54BAAB;
+  }
+
+  a:hover{
+    color: #54BAAB;
+  }
+
       .btn-primary{
         background-color: #54BAAB;
         border: none;
