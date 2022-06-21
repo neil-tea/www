@@ -113,7 +113,7 @@ We may disclose personal information that we collect or you provide as described
 We may also disclose your personal information:
 
 - To comply with any court order, law, or legal process, including to respond to any government or regulatory request.
-- To enforce or apply our [terms of use](https://tea.xyz/terms-of-use) and other agreements, including for billing and collection purposes.
+- To enforce or apply our [terms of use](https://tea.xyz/terms-of-use/) and other agreements, including for billing and collection purposes.
 - If we believe disclosure is necessary or appropriate to protect the rights, property, or safety of TEA INC., our customers, or others.
 
 #### Choices About How We Use and Disclose Your Information
