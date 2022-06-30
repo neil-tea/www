@@ -5,7 +5,7 @@ html {
 }
 
 body{
-  background-color: #2B3033;
+  background-color: #1C1E21;
 }
 
 /*Post Authentication Box*/
@@ -137,7 +137,7 @@ For authenticated users:
     transition:0.2s ease-in-out;
 }
 .bg-dark.scrolled {
-    background-color:#000 !important;
+    background-color:#151619 !important;
 }
 
 #tea-steam-dark-1{
