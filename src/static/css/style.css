@@ -225,6 +225,11 @@ For authenticated users:
 
 
   @media only screen and (min-width: 600px) {
+
+    #cycle-br{
+      display:none;
+    }
+
     #tea-steam-1{
       position: absolute;
       z-index: 0;
