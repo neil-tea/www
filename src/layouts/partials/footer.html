@@ -154,70 +154,27 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
   </script>
 
   <script>
-        var words = (function(){
-    var words = [
-        'web',
-        'web3',
-        'game dev',
-        'AI',
-        'automation',
-        'data',
-        'ML',
-        'devops',
-        'smart contracts',
-        'creating',
-        'everything',
-        '<i>you<i>'
-        ],
-      el = document.querySelector('.verb'),
-      currentIndex,
-      currentWord,
-      prevWord,
-      duration = 3000;
-    var _getIndex = function(max, min){
-      currentIndex = Math.floor(Math.random() * (max - min + 1)) + min;
-      //Generates a random number between beginning and end of words array
-      return currentIndex;
+    const textList = [
+    "web3",
+    "game dev",
+    "web",
+    "AI",
+    "automation",
+    "data",
+    "ML",
+    "smart contracts",
+    "devops",
+    "ML",
+    "creating",
+    "everything",
+    "<i>you<i>"
+    ];
+    const cycle = document.querySelector("#cycle");
+    let i = 0;
+    const cycleText = () => {
+      cycle.innerHTML = textList[i];
+      i = ++i % textList.length;
     };
-    var _getWord = function(index){
-      currentWord = words[index];
-      return currentWord;
-    };
-    var _clear = function() {
-      setTimeout(function(){
-        el.className = 'verb';
-      }, duration/4);
-    };
-    var _toggleWord = function(duration){
-      setInterval(function(){
-        //Stores value of previous word
-        prevWord = currentWord;
-        //Generate new current word
-        currentWord = words[_getIndex(words.length-1, 0)];
-        //Generate new word if prev matches current
-        if(prevWord === currentWord){
-          currentWord = words[_getIndex(words.length-1, 0)];
-        }
-        //Swap new value
-        el.innerHTML = currentWord;
-        //Clear class styles
-        _clear();
-        //Fade in word
-        el.classList.add(
-          'js-block',
-          'js-fade-in-verb'
-          );
-      }, duration);
-    };
-    var _init = function(){
-      _toggleWord(duration);
-    };
-    //Public API
-    return {
-      init : function(){
-        _init();
-      }
-    };
-    })();
-    words.init();
+    cycleText();
+    setInterval(cycleText, 1200);
   </script>
