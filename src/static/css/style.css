@@ -317,6 +317,12 @@ For authenticated users:
     color: #54BAAB;
   }
 
+  .prompt{
+    font-family: 'Prompt', sans-serif !important;
+    font-size: 200px;
+    line-height: 184px;
+  }
+
       .btn-primary{
         background-color: #54BAAB;
         border: none;
