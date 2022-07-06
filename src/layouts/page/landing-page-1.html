@@ -1,25 +1,62 @@
 {{ define "main" }}
   <!-- Hero Section -->
 
-  <img id="tea-steam-dark-1" src="Images/tea-steam-dark-1.svg" alt="">
-  <img id="tea-steam-dark-2" src="Images/tea-steam-dark-2.svg" alt="">
-  <div class="container">
+<!-- Styling for this landing page only -->
+
+  <style>
+
+    @media only screen and (min-width: 600px) {
+      .prompt{
+        font-family: 'Prompt', sans-serif !important;
+        font-size: 12rem;
+        line-height: 10.2rem;
+      }
+
+      .prompt_btn{
+        left: 57%;
+        position: absolute;
+        display:inline !important;
+        margin-top: -70px !important;
+        width: 350px;
+        font-size: 20px;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .prompt{
+          font-family: 'Prompt', sans-serif !important;
+          font-size: 6rem !important;
+          line-height: 5.1rem !important;
+        }
+
+        .prompt_btn{
+          margin-top: 20px;
+        }
+    }
+
+  </style>
+
+  <img id="tea-steam-dark-1" src="/Images/tea-steam-dark-1.svg" alt="">
+  <img id="tea-steam-dark-2" src="/Images/tea-steam-dark-2.svg" alt="">
+  <div class="container pt-5 pb-5">
     <div class="row">
-      <div class="col">
+      <div class="col" style="z-index:100;">
         <h1 class="prompt yellow">KEEP <br>WHAT IS <br>YOURS.</h1>
-        <a style="float:right; display:inline; margin-top: -75px;" class="btn btn-primary auth-btn mb-3" href="https://github.com/apps/tea-xyz/installations/new" role="button">Authenticate with tea<span class="badge rounded-pill bg-primary ms-3"><span id="count2">287</span></span></a>
+        <a id="prompt-btn" class="btn btn-primary charcoal auth-btn mb-3 prompt_btn" href="https://github.com/apps/tea-xyz/installations/new" role="button">Authenticate with tea<span class="badge rounded-pill bg-primary ms-3"><span id="count2" class="charcoal"></span></span></a>
+        <p style="color:#b3c8c8;" class="mt-5 mb-5 lead">Equitable Open-Source for web3</p>
       </div>
     </div>
     <div class="row">
-      <div class="col">
+      <div class="col" style="z-index:100;">
         <h2 class="display-3">Thousands of developers have authenticated their Github with tea. This is your chance to be an early member of our Communitea.</h2>
+        <a class="btn btn-primary charcoal auth-btn mb-3 mt-4" href="https://github.com/apps/tea-xyz/installations/new" role="button">Authenticate with tea<span class="badge rounded-pill bg-primary ms-3"><span id="count5" class="charcoal"></span></span></a>
       </div>
     </div>
   </div>
 
   <!-- Mission Statement -->
-  <img id="tea-steam-1" src="Images/tea-steam-1.svg" alt="">
-  <img id="tea-steam-2" src="Images/tea-steam-2.svg" alt="">
+  <img id="tea-steam-1" src="/Images/tea-steam-1.svg" alt="">
+  <img id="tea-steam-2" src="/Images/tea-steam-2.svg" alt="">
   <div class="row mission pb-5 pt-5">
     <div class="container pb-5 pt-5">
       <div class="row">
@@ -46,22 +83,22 @@
           foundation for all the innovations that followed. The maintainers of these new bricks became thanklessly
           unpaid volunteers.</p>
         <hr class="mb-4">
-        <h4><img src="Images/no-compensation.svg" alt="no compensation icon" class="feature-icon me-2"> No Compensation
+        <h4><img src="/Images/no-compensation.svg" alt="no compensation icon" class="feature-icon me-2"> No Compensation
         </h4>
         <p class="mb-4 ps-5">Developers contribute innovations (bricks) to the tower of infrastructure that serves as a
           feeding ground for big tech. Their efforts are capitalized on, yet they see none of that profit.</p>
         <hr class="mb-4">
-        <h4><img src="Images/centralized.svg" alt="centralized icon" class="feature-icon me-2"> Centralized</h4>
+        <h4><img src="/Images/centralized.svg" alt="centralized icon" class="feature-icon me-2"> Centralized</h4>
         <p class="mb-4 ps-5">Entire stacks are left at the mercy of single, proprietary vendors who control their
           composition and deployment. This turns the “tower of bricks” into a game of Jenga.</p>
         <hr class="mb-4">
-        <h4><img src="Images/obligation_maintain.svg" alt="obligation icon" class="feature-icon me-2"> Obligation to
+        <h4><img src="/Images/obligation_maintain.svg" alt="obligation icon" class="feature-icon me-2"> Obligation to
           Maintain</h4>
         <p class="ps-5">Open&hyphen;source authors are pressured by their peers and the community at large to
           continuously maintain and update their contributions... again, without pay or gratitude.</p>
       </div>
       <div class="col-lg-6 col-sm-12 col-md-6 col-12 mx-auto web2-col my-auto">
-        <img class="web2-tower" style="display:block; margin-left:auto; margin-right:auto;" src="Images/web2-tower.svg"
+        <img class="web2-tower" style="display:block; margin-left:auto; margin-right:auto;" src="/Images/web2-tower.svg"
           alt="">
       </div>
     </div>
@@ -83,15 +120,15 @@
           We’re not changing how open source works—it’s still free. web3 has introduced powerful new paradigms that
           allow value to be compensated without direct payment. Creator economy, meet open source.</p>
         <hr class="mb-4">
-        <h4><img src="Images/token_rewards.svg" alt="token rewards icon" class="me-2"> Token Rewards</h4>
+        <h4><img src="/Images/token_rewards.svg" alt="token rewards icon" class="me-2"> Token Rewards</h4>
         <p class="mb-4 ps-5">Through tea, open&hyphen;source contributors are rewarded with our flagship token relative
           to aggregate usage and sweat equity. Now, devs are able to monetize their generosity. </p>
         <hr class="mb-4">
-        <h4><img src="Images/decentralized.svg" alt="tea.xyz is decentralized" class="me-2"> De-Centralized</h4>
+        <h4><img src="/Images/decentralized.svg" alt="tea.xyz is decentralized" class="me-2"> De-Centralized</h4>
         <p class="mb-4 ps-5">web3 turns the “Jenga” game back into a tower of stable bricks. By putting everything
           on-chain, we’re ensuring that entire stacks will no longer sit at the mercy of sole developers.</p>
         <hr class="mb-4">
-        <h4><img src="Images/transferrable.svg" alt="tea.xyz is transferrable" class="me-2"> Transferrable</h4>
+        <h4><img src="/Images/transferrable.svg" alt="tea.xyz is transferrable" class="me-2"> Transferrable</h4>
         <p class="ps-5">Devs are not obligated to dedicate years to maintaining a single project. Instead, they can
           transfer ownership to another interested party and move on to creating something else. </p>
 
@@ -110,7 +147,7 @@
       <div class="col-12 col-sm-12 col-md-12 col-lg-4 mb-4">
         <div class="card mb-4">
           <div class="card-body p-4">
-            <img src="Images/cross-platform.svg" alt="" class="mb-3">
+            <img src="/Images/cross-platform.svg" alt="" class="mb-3">
             <h4 class="mb-4">Cross Platform Compatible</h4>
             <p>Wherever you develop, wherever your CI/CD runs, however you deploy your app, tea is there. We abstract
               this detail away so you can get on with the work that matters to you.<br><br>
@@ -129,7 +166,7 @@
 
         <div class="card">
           <div class="card-body p-4">
-            <img src="Images/delightful-dev.svg" alt="" class="mb-3">
+            <img src="/Images/delightful-dev.svg" alt="" class="mb-3">
             <h4 class="mb-4">Delightful DevExperience</h4>
             <p>tea is built with a “it just works” philosophy. It’s our job to set you up for success and then get out
               of your way so you can work as effectively as possible. Development is hard enough without the toolset
@@ -146,7 +183,7 @@
       <div class="col-12 col-sm-12 col-md-12 col-lg-4">
         <div class="card mb-4">
           <div class="card-body p-4">
-            <img src="Images/designed-teams.svg" alt="" class="mb-3">
+            <img src="/Images/designed-teams.svg" alt="" class="mb-3">
             <h4 class="mb-4">Designed for tea’ms</h4>
             <p>Good developers create. Great developers collaborate.</p>
 
@@ -160,7 +197,7 @@
 
         <div class="card mb-4">
           <div class="card-body p-4">
-            <img src="Images/decentralized-secure.svg" alt="" class="mb-3">
+            <img src="/Images/decentralized-secure.svg" alt="" class="mb-3">
             <h4 class="mb-4">Decentralized &amp; Secure</h4>
             <p>tea’s decentralization offers tangible benefits to ecosystem security. Every layer of your apps and dapps
               is signed and verified on‐chain. Users can rest assured that the software they are using is what all its
@@ -182,7 +219,7 @@
       <div class="col-12 col-sm-12 col-md-12 col-lg-4">
         <div class="card mb-4">
           <div class="card-body p-4">
-            <img src="Images/open-governance.svg" alt="" class="mb-3">
+            <img src="/Images/open-governance.svg" alt="" class="mb-3">
             <h4 class="mb-4">Open Governance</h4>
             <p>We believe the open source community needs to direct and control the ecosystem we will help launch. The
               DAO will be an open, transparent and evolving governance structure where the depth of your contributions
@@ -192,7 +229,7 @@
 
         <div class="card">
           <div class="card-body p-4">
-            <img src="Images/help-build.svg" alt="" class="mb-3">
+            <img src="/Images/help-build.svg" alt="" class="mb-3">
             <h4 class="mb-4">Want to Help Us Build It?</h4>
             <p>Join the team that is both fixing how open source is funded and creating the tools that will accelerate
               its creation for the benefit of all humanity.</p>
@@ -223,7 +260,7 @@
     <div class="row">
       <div class="col-12 col-sm-12 col-lg-12 my-auto">
         <a href="https://www.binance.com/en/blog/ecosystem/binance-labs-leads-$8-million-seed-funding-round-for-tea-421499824684903608"
-          style="cursor:pointer;"><img id="binance" class="partner-img" src="Images/binance.svg"
+          style="cursor:pointer;"><img id="binance" class="partner-img" src="/Images/binance.svg"
             alt="Proud of Binance"></a>
       </div>
 
@@ -244,7 +281,7 @@
         <div class="col-6 col-sm-6 col-lg">
           <a href="https://discord.gg/KCZsXfJphn">
             <div class="com-card mb-4">
-              <img src="Images/discord.svg" alt="" class="community-icon">
+              <img src="/Images/discord.svg" alt="" class="community-icon">
             </div>
           </a>
         </div>
@@ -252,7 +289,7 @@
         <div class="col-6 col-sm-6 col-lg">
           <a href="https://twitter.com/teaxyz_">
             <div class="com-card mb-4">
-              <img src="Images/twitter.svg" alt="" class="community-icon">
+              <img src="/Images/twitter.svg" alt="" class="community-icon">
             </div>
           </a>
         </div>
@@ -260,7 +297,7 @@
         <div class="col-6 col-sm-6 col-lg">
           <a href="https://github.com/teaxyz">
             <div class="com-card mb-4">
-              <img src="Images/github.svg" alt="" class="community-icon">
+              <img src="/Images/github.svg" alt="" class="community-icon">
             </div>
           </a>
         </div>
@@ -268,7 +305,7 @@
         <div class="col-6 col-sm-6 col-lg">
           <a href="https://t.me/tea_xyz">
             <div class="com-card mb-4">
-              <img src="Images/telegram.svg" alt="" class="community-icon">
+              <img src="/Images/telegram.svg" alt="" class="community-icon">
             </div>
           </a>
         </div>
@@ -276,7 +313,7 @@
         <div class="col-6 col-sm-6 col-lg align-self-center">
           <a href="https://reddit.com/r/teaxyz">
             <div class="com-card mb-4">
-              <img src="Images/reddit.svg" alt="" class="community-icon">
+              <img src="/Images/reddit.svg" alt="" class="community-icon">
             </div>
           </a>
         </div>
@@ -284,11 +321,10 @@
         <div class="col-6 col-sm-6 col-lg align-self-center">
           <a href="https://www.instagram.com/tea.xyz/">
             <div class="com-card mb-4">
-              <img src="Images/instagram-iconAsset 1.svg" alt="" class="community-icon">
+              <img src="/Images/instagram-iconAsset 1.svg" alt="" class="community-icon">
             </div>
           </a>
         </div>
-
       </div>
     </div>
   </div>
