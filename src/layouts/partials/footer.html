@@ -99,7 +99,8 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
     });
 
     if (localStorage['signup'].match(/:::/)) {
-      const [username, serial] = localStorage.signup.split(':::');
+      const [username, serial_] = localStorage.signup.split(':::');
+      const serial = (+serial_).toLocaleString()
       $('.box-auth-true').show();
       $('.box-auth-false').hide();
       $('#auth-username').html(username);
