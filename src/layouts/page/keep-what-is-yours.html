@@ -111,14 +111,34 @@
 
     <style>
 
-      #SubscriberForm-Email-TRDBBvXuDV3vy1t0U684MU{
-        width:69%;
+
+      @media only screen and (max-width: 576px) {
+
+        #SubscriberForm-Email-TRDBBvXuDV3vy1t0U684MU{
+          width:100%;
+        }
+
+        #keep-email-btn{
+          width:100%;
+          float:none;
+          margin-bottom:20px;
+        }
+
       }
 
-      #keep-email-btn{
-        width:29%;
-        float:right;
+      @media only screen and (min-width: 576px) {
+
+        #SubscriberForm-Email-TRDBBvXuDV3vy1t0U684MU{
+          width:69%;
+        }
+
+        #keep-email-btn{
+          width:29%;
+          float:right;
+        }
+
       }
+
     </style>
 
 <!-- Start three column value props -->
