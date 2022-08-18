@@ -188,3 +188,8 @@ integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+
     rdt('track', 'SignUp');
     rdt('track', 'ViewContent');
   </script>
+
+  <script>
+    const githubButton = document.querySelectorAll("#keep-btn-top, #keep-btn-bottom, #nav-cta");
+    githubButton.addEventListener('click', () => rdt('track', 'SignUp'));
+  </script>
