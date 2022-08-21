@@ -1,8 +1,8 @@
-import * as cdk from '@aws-cdk/core';
+import { App } from 'aws-cdk-lib';
 
 import TeaXYZ from '../lib/tea.xyz';
 
-const app = new cdk.App();
+const app = new App();
 
 /**
  * The name of the stack depends on the STAGE environment variable so we can deploy the infrastructure multiple times in parallel

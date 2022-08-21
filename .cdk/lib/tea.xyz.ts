@@ -1,15 +1,20 @@
-import * as cloudfront from "@aws-cdk/aws-cloudfront";
-import * as cloudfrontOrigins from "@aws-cdk/aws-cloudfront-origins";
-import * as s3 from "@aws-cdk/aws-s3";
-import * as lambda from "@aws-cdk/aws-lambda";
-import * as s3Deployment from "@aws-cdk/aws-s3-deployment";
-import * as cdk from "@aws-cdk/core";
+import {
+  aws_cloudfront as cloudfront,
+  aws_cloudfront_origins as cloudfrontOrigins,
+  aws_s3 as s3,
+  aws_lambda as lambda,
+  aws_s3_deployment as s3Deployment,
+  Stack,
+  StackProps,
+  RemovalPolicy,
+  CfnOutput } from "aws-cdk-lib";
+import { Construct } from "constructs";
 
 /**
  * The CloudFormation stack holding all our resources
  */
-export default class TeaXYZ extends cdk.Stack {
-  constructor(scope: cdk.Construct, id: string, props?: cdk.StackProps) {
+export default class TeaXYZ extends Stack {
+  constructor(scope: Construct, id: string, props?: StackProps) {
     super(scope, id, props);
 
     /**
@@ -17,7 +22,7 @@ export default class TeaXYZ extends cdk.Stack {
      */
     const bucket = new s3.Bucket(this, "Bucket", {
       autoDeleteObjects: true,
-      removalPolicy: cdk.RemovalPolicy.DESTROY,
+      removalPolicy: RemovalPolicy.DESTROY,
     });
 
     const edgeLambda = lambda.Version.fromVersionArn(this, "Lambda", "arn:aws:lambda:us-east-1:640264234305:function:www-redirect:10");
@@ -48,7 +53,7 @@ export default class TeaXYZ extends cdk.Stack {
     /**
      * Output the distribution's url so we can pass it to external systems
      */
-    new cdk.CfnOutput(this, "DeploymentUrl", {
+    new CfnOutput(this, "DeploymentUrl", {
       value: "https://" + distribution.distributionDomainName
     });
 
