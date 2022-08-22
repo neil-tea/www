@@ -53,6 +53,31 @@
         }
     }
 
+    @media only screen and (max-width: 992px) and (min-width: 576px)  {
+
+      #keep-btn-top{
+        width:75%;
+      }
+
+      #keep-btn-bottom{
+        width:49%;
+      }
+
+      .whitepaper-btn-right{
+        width: 49%;
+      }
+
+      .boiler{
+        width:75%;
+      }
+
+      .whitepaper-syne-btn,
+      .discord-syne-btn{
+        width:100%;
+      }
+
+    }
+
   </style>
 
   <img id="tea-steam-dark-1" src="/Images/tea-steam-dark-1.svg" alt="">
@@ -60,17 +85,98 @@
   <div class="container pt-5 pb-5">
     <div class="row">
       <div class="col" style="z-index:100;">
-        <h1 class="prompt yellow">KEEP <br>WHAT IS <br>YOURS.<a class="btn btn-primary auth-btn mb-3 mt-5 ms-lg-5 ms-md-5 ms-sm-0 ms-0" id="keep-btn-top" style="font-family:var(--bs-body-font-family)!important; vertical-align:bottom;" href="https://github.com/login/oauth/authorize?client_id=9d1f1a72f1300b6991df&state=teaxyz" role="button">Authenticate with GitHub</a></h1>
+        <h1 class="prompt yellow">KEEP <br>WHAT IS <br>YOURS.<a class="btn btn-primary auth-btn mb-3 mt-5 ms-lg-5 ms-md-0 ms-sm-0 ms-0" id="keep-btn-top" style="font-family:var(--bs-body-font-family)!important; vertical-align:bottom;" href="https://github.com/login/oauth/authorize?client_id=9d1f1a72f1300b6991df&state=teaxyz" role="button">Authenticate with GitHub</a></h1>
         <p style="color:#b3c8c8;" class="mt-5 mb-5 lead">Equitable Open-Source for web3</p>
       </div>
     </div>
     <div class="row">
       <div class="col" style="z-index:100;">
         <h2 class="display-3">Thousands of developers have authenticated their Github with tea. This is your chance to be an early member of our Communitea.</h2>
-        <a class="btn btn-primary auth-btn mb-3 mt-4" id="keep-btn-bottom" href="https://github.com/login/oauth/authorize?client_id=9d1f1a72f1300b6991df&state=teaxyz" role="button">Authenticate with GitHub</a>
+        <div class="row">
+          <div class="col-lg-6 p-0">
+            <a style="border: 2px solid #54BAAB;" class="btn btn-primary auth-btn mb-3 mt-4" id="keep-btn-bottom" href="https://github.com/login/oauth/authorize?client_id=9d1f1a72f1300b6991df&state=teaxyz" role="button">Authenticate with GitHub</a>
+            <a class="btn btn-primary mt-lg-4 mt-md-4 mt-sm-0 mt-0 whitepaper-btn-right" id="whitepaper-btn" href="/white-paper/"
+              role="button" style="background:transparent; float:right;">Read Our White Paper</a>
+          </div>
+        </div>
         <p class="small boiler">Limited numbers of tea beta invites will be given to the first devs who authenticate their Github account. So don’t delay, get it while it’s hot.</p>
       </div>
     </div>
+
+    <!-- Start email subscribe form -->
+
+    <div class="row">
+      <div class="col mt-5">
+        <h3 class="mb-4 display-6">Stay up to date with all the latest tea news</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-7">
+          <div class="sendx-modal-TRDBBvXuDV3vy1t0U684MU">
+            <div class="sendx-modal-content-TRDBBvXuDV3vy1t0U684MU sendx-modal">
+              <div class="sendx-modal-right-TRDBBvXuDV3vy1t0U684MU">
+                <div class="sendx-modal-body-TRDBBvXuDV3vy1t0U684MU">
+                   <form class="sendx-submit-form-TRDBBvXuDV3vy1t0U684MU" method="post" action="https://app.sendx.io/api/v1/form/TRDBBvXuDV3vy1t0U684MU">
+                      <input id="SubscriberForm-Email-TRDBBvXuDV3vy1t0U684MU" type="Email" class="sendx-field-TRDBBvXuDV3vy1t0U684MU email-field mb-3" data-attr-type="0" name="Email" placeholder="Add your email_" required>
+                      <input type="submit" id="keep-email-btn" class="sendx-submit-TRDBBvXuDV3vy1t0U684MU sendx-button-TRDBBvXuDV3vy1t0U684MU btn-primary email-submit"  name="subscribe" value="Subscribe">
+                     </input>
+                   </form>
+                   <div class="sendx-close-text-TRDBBvXuDV3vy1t0U684MU">
+                   </div>
+                   <div style="display:flex; align-items:baseline;" class="sendx-gdpr-TRDBBvXuDV3vy1t0U684MU-wrapper">
+                     <input class="sendx-gdpr-TRDBBvXuDV3vy1t0U684MU" type="checkbox"></input><span class="sendx-gdpr-content-TRDBBvXuDV3vy1t0U684MU ms-2"><p>Opt in to receive updates from us </p></span>
+                   </div>
+                 </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+<!-- Styling for Subscibe form -->
+
+    <style>
+
+      #keep-btn-bottom:hover{
+        border: 2px solid #62CFBF !important;
+      }
+
+      @media only screen and (max-width: 576px) {
+
+        #SubscriberForm-Email-TRDBBvXuDV3vy1t0U684MU{
+          width:100%;
+        }
+
+        #keep-email-btn{
+          width:100%;
+          float:none;
+          margin-bottom:20px;
+        }
+
+        .whitepaper-btn-right{
+          width:100%;
+          margin-bottom: 10px;
+        }
+
+      }
+
+      @media only screen and (min-width: 576px) {
+
+        #SubscriberForm-Email-TRDBBvXuDV3vy1t0U684MU{
+          width:69%;
+        }
+
+        #keep-email-btn{
+          width:29%;
+          float:right;
+        }
+
+      }
+
+    </style>
+
+<!-- End styling for subscribe form -->
 
 <!-- Start three column value props -->
 
@@ -148,7 +254,7 @@
      <div class="col-lg-4 col-md-4 col-sm-12 col-12 syne-col pt-5 pb-3" style="display:flex; flex-direction:column;">
        <hr class="syne-hr">
        <h3 class="mb-4">We’re calling on all open‐source devs to authenticate their Github with tea.</h3>
-       <a class="btn btn-primary mb-sm-0 mb-md-5 mb-0" id="whitepaper-btn" href="/white-paper/"
+       <a class="btn btn-primary mb-sm-0 mb-md-5 mb-0 whitepaper-syne-btn" id="whitepaper-btn" href="/white-paper/"
          role="button" style="background:transparent;">Read Our White Paper</a>
        <hr class="syne-hr d-none d-lg-block" style="margin-top:auto;">
      </div>
@@ -162,7 +268,7 @@
      <div class="col-lg-4 col-md-4 col-sm-12 col-12 syne-col pt-5 pb-3">
        <hr class="syne-hr">
        <h3 class="mb-4">Join our discord, where you can talk to our team on the regular and ask anything.</h3>
-       <a class="btn btn-primary mb-sm-0 mb-md-5 mb-0" id="whitepaper-btn" href="https://discord.gg/KCZsXfJphn"
+       <a class="btn btn-primary mb-sm-0 mb-md-5 mb-0 discord-syne-btn" id="whitepaper-btn" href="https://discord.gg/KCZsXfJphn"
          role="button" style="background:transparent;">Join our Discord</a>
        <hr class="syne-hr d-none d-lg-block">
      </div>
