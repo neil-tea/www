@@ -30,6 +30,14 @@ jobs:
       with:
         target: build
 
+    - name: Check for broken links
+      uses: lycheeverse/lychee-action@v1
+      with:
+        fail: true
+        args: --verbose --no-progress './public/**/*.md' './public/**/*.html'
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
     ## means s3 sync will only sync things we need sync’d
     - uses: chetan/git-restore-mtime-action@v1
 
