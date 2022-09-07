@@ -24,6 +24,11 @@ body{
   border-bottom: 2px solid #949494;
 }
 
+.nav-item{
+  font-family: "pp-neue-machina", sans-serif;
+  text-transform: uppercase;
+}
+
 /* Brand Colors */
 
 .teal{
