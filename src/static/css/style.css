@@ -44,37 +44,73 @@ div.container-fluid.top-nav{
 
 /* Brand Colors */
 
-.teal{
-  color:#00ffd0;
-}
+  /* Type Colors */
 
-.black{
-  color: #1a1a1a;
-}
+  .teal{
+    color:#00ffd0;
+  }
 
-.dark-gray{
-  color: #4d4d4d;
-}
+  .black{
+    color: #1a1a1a;
+  }
 
-.grid-gray{
-  color: #949494;
-}
+  .dark-gray{
+    color: #4d4d4d;
+  }
 
-.light-gray{
-  color: #e1e1e1;
-}
+  .grid-gray{
+    color: #949494;
+  }
 
-.white{
-  color: #ffffff;
-}
+  .light-gray{
+    color: #e1e1e1;
+  }
 
-.purple{
-  color: #8000ff;
-}
+  .white{
+    color: #ffffff;
+  }
 
-.orange{
-  color: #ff4100;
-}
+  .purple{
+    color: #8000ff;
+  }
+
+  .orange{
+    color: #ff4100;
+  }
+
+  /* Background Colors */
+
+  .teal-bg{
+    background-color:#00ffd0;
+  }
+
+  .black-bg{
+    background-color: #1a1a1a;
+  }
+
+  .dark-gray-bg{
+    background-color: #4d4d4d;
+  }
+
+  .grid-gray-bg{
+    background-color: #949494;
+  }
+
+  .light-gray-bg{
+    background-color: #e1e1e1;
+  }
+
+  .white-bg{
+    background-color: #ffffff;
+  }
+
+  .purple-bg{
+    background-color: #8000ff;
+  }
+
+  .orange-bg{
+    background-color: #ff4100;
+  }
 
 /* General Typography */
 
