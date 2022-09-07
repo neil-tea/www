@@ -18,10 +18,13 @@ body{
 
 /* Navbar General */
 
+div.container-fluid.top-nav{
+  padding-left: 0px !important;
+}
+
 .navbar{
   background-color: #1a1a1a !important;
   height: 80px;
-  border-bottom: 2px solid #949494;
 }
 
 .nav-item{
@@ -114,4 +117,45 @@ p{
     font-size: 20px;
   }
 
+}
+
+/* Buttons */
+
+a{
+
+}
+
+.btn-primary{
+  padding: 65px 80px;
+  border-radius: 0px !important;
+  font-family: "pp-neue-machina", sans-serif;
+  text-transform: uppercase;
+  font-size: 38px;
+  border-left: 2px solid #949494 !important;
+  border-right: 2px solid #949494 !important;
+  background-color: #1a1a1a !important;
+  outline: none !important;
+  box-shadow: none !important;
+  text-align: left;
+  border-top-color:#1a1a1a;
+  border-bottom-color: #1a1a1a;
+}
+
+.btn-primary:hover{
+  background-color: #00ffd0 !important;
+  color: #1a1a1a;
+  border-top-color:#00ffd0;
+  border-bottom-color:#00ffd0;
+}
+
+.button-container{
+  padding: 0px 160px;
+}
+
+/* Spacers & Dividers */
+
+hr{
+  border-bottom: 2px solid #949494 !important;
+  opacity: 1;
+  margin:0px !important;
 }
