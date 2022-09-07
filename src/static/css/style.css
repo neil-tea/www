@@ -25,6 +25,16 @@ div.container-fluid.top-nav{
 .navbar{
   background-color: #1a1a1a !important;
   height: 80px;
+  border-bottom: 2px solid #949494;
+}
+
+.nav-logo{
+  width: 78px;
+  transition: 0.2s ease-in-out;
+}
+
+.nav-logo:hover{
+  transform: scale(0.9);
 }
 
 .nav-item{
