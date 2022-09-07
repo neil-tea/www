@@ -1,5 +1,62 @@
-/* General */
+/* General/Utilities */
 
 body{
   background-color: #1a1a1a;
+  max-width: 1920px;
+}
+
+.container{
+  max-width: 1920px;
+  padding:0px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .container{
+    padding: 80px 160px;
+  }
+}
+
+/* Brand Colors */
+
+.teal{
+  color:#00ffd0;
+}
+
+.black{
+  color: #1a1a1a;
+}
+
+.dark-gray{
+  color: #4d4d4d;
+}
+
+.grid-gray{
+  color: #949494;
+}
+
+
+
+/* General Typography */
+
+@font-face {
+  font-family: "pp-neue-machina";
+  src: url("/fonts/PPNeueMachina-InktrapLight.woff");
+}
+
+h1{
+  font-family: "pp-neue-machina", sans-serif;
+  color:#00ffd0;
+  text-transform:uppercase;
+}
+
+/* Breakpoint-Specific Typography */
+
+
+@media only screen and (min-width: 1280px) {
+
+  h1{
+    font-size: 224px;
+    line-height: 240px;
+  }
+
 }
