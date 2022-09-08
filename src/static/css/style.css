@@ -242,8 +242,13 @@ hr{
   .impact-section{
   }
 
+  .about-block{
+    padding: 80px !important;
+  }
+
   .grid-element{
     z-index: 1;
+    position: absolute;
   }
 
 }
