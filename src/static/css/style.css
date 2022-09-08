@@ -3,12 +3,14 @@
 body{
   background-color: #1a1a1a;
   max-width: 1920px;
+  background-image: url("/Images/x-large-grid.svg");
+  background-size: auto;
 }
 
 .hero-container{
   background-image: url("/Images/x-large-grid-hero.svg");
   background-size: auto;
-  background-repeat: no-repeat;
+  background-color: #1a1a1a;
 }
 
 .container{
