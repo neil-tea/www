@@ -240,7 +240,7 @@ hr{
 @media only screen and (min-width: 1280px) {
 
   .hero-section{
-    margin-bottom: 80px !important;
+    margin-bottom: 80px;
   }
 
   .impact-section{
