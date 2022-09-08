@@ -7,11 +7,13 @@ body{
   background-size: auto;
 }
 
+/*
 .hero-container{
   background-image: url("/Images/x-large-grid-hero.svg");
   background-size: auto;
   background-color: #1a1a1a;
 }
+*/
 
 .container{
   max-width: 1920px;
