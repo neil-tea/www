@@ -7,7 +7,7 @@ body{
 
 .hero-container{
   background-image: url("/Images/x-large-grid-hero.svg");
-  background-size: contain;
+  background-size: auto;
   background-repeat: no-repeat;
 }
 
@@ -18,7 +18,7 @@ body{
 
 @media only screen and (min-width: 1280px) {
   .container{
-    padding: 135px 132px 0px 132px;
+    padding: 160px 132px 0px 132px;
   }
 }
 
@@ -152,8 +152,9 @@ p{
 @media only screen and (min-width: 1280px) {
 
   h1{
-    font-size: 210px;
-    line-height: 222px;
+    font-size: 224px;
+    line-height: 240px;
+    margin-top: -18px;
   }
 
   h2{
@@ -163,6 +164,7 @@ p{
 
   .lead{
     font-size: 28px !important;
+    line-height: 29px !important;
   }
 
   p{
