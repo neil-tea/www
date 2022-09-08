@@ -4,7 +4,7 @@ body{
   background-color: #1a1a1a;
   max-width: 1920px;
   background-image: url("/Images/x-large-grid.svg");
-  background-size: auto;
+  background-size: contain;
 }
 
 /*
@@ -22,7 +22,7 @@ body{
 
 @media only screen and (min-width: 1280px) {
   .container{
-    padding: 160px 132px 0px 132px;
+    padding: 128px 150px 10px 132px;
   }
 }
 
@@ -167,14 +167,13 @@ p{
 @media only screen and (min-width: 1280px) {
 
   h1{
-    font-size: 224px;
-    line-height: 240px;
-    margin-top: -18px;
+    font-size: 13.25rem;
+    line-height: 14rem;
   }
 
   h2{
-    font-size: 110px;
-    line-height: 160px;
+    font-size: 6rem;
+    line-height: 8rem;
   }
 
   h3{
@@ -190,41 +189,13 @@ p{
   .lead{
     font-size: 28px !important;
     line-height: 29px !important;
+    margin-top: -23px !important;
   }
 
   p{
     font-size: 20px;
   }
 
-}
-
-/* Buttons */
-
-.btn-primary{
-  padding: 65px 80px;
-  border-radius: 0px !important;
-  font-family: "pp-neue-machina", sans-serif;
-  text-transform: uppercase;
-  font-size: 38px;
-  border-left: 2px solid #949494 !important;
-  border-right: 2px solid #949494 !important;
-  background-color: #1a1a1a !important;
-  outline: none !important;
-  box-shadow: none !important;
-  text-align: left;
-  border-top-color:#1a1a1a;
-  border-bottom-color: #1a1a1a;
-}
-
-.btn-primary:hover{
-  background-color: #00ffd0 !important;
-  color: #1a1a1a;
-  border-top-color:#00ffd0;
-  border-bottom-color:#00ffd0;
-}
-
-.button-container{
-  padding: 0px 160px;
 }
 
 /* Spacers & Dividers */
@@ -240,7 +211,7 @@ hr{
 @media only screen and (min-width: 1280px) {
 
   .hero-section{
-    margin-bottom: 80px;
+    margin-bottom: 75px;
   }
 
   .impact-section{
@@ -253,5 +224,6 @@ hr{
   .grid-element{
     z-index: 1;
     position: absolute;
+    width:600px;
   }
 }
