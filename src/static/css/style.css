@@ -227,3 +227,13 @@ hr{
     width:600px;
   }
 }
+
+/* Package Display Section */
+
+.package-label{
+  font-size: 1rem;
+}
+
+.detail-btn{
+  float:right;
+}
