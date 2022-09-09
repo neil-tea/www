@@ -74,7 +74,7 @@
       <hr>
         <div class="col mb-4 mt-3">
           <h4>Our white paper is available in multiple languages</h4>
-          <p>Thanks to the tea community's generosity and time, our white paper is available in several world languages.</p>
+          <p>Thanks to the tea community's generosity and time, our white paper is available in several world languages. Select your preferred language from the dropdown menu.</p>
           <div class="dropdown">
             <button class="btn btn-secondary dropdown-toggle languages" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Choose a Language
@@ -95,6 +95,7 @@
   <script>
   function go(loc) {
     document.getElementById('wp-iframe').src = loc;
+    document.getElementById('mobile-wp-download').href = loc;
   }
   </script>
 
@@ -149,7 +150,7 @@
             <div style="margin-top:auto; margin-bottom:auto;">
               <p class="text-center">Mobile browsers can be finicky, so please view our white paper via the button
                 below.</p>
-              <a style="display:block; margin-left:auto; margin-right:auto;" class="btn btn-primary mb-3"
+              <a id="mobile-wp-download" style="display:block; margin-left:auto; margin-right:auto;" class="btn btn-primary mb-3"
                 href="https://tea.xyz/tea.white-paper.pdf" role="button">Download our White Paper</a>
             </div>
           </div>
