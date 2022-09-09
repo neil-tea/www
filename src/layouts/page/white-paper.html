@@ -80,17 +80,23 @@
               Choose a Language
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">English</a></li>
-              <li><a class="dropdown-item" href="#">Belarusian</a></li>
-              <li><a class="dropdown-item" href="#">German</a></li>
-              <li><a class="dropdown-item" href="#">Indonesian</a></li>
-              <li><a class="dropdown-item" href="#">Korean</a></li>
-              <li><a class="dropdown-item" href="#">Spanish</a></li>
+              <li><a class="dropdown-item" onclick="go('')">English</a></li>
+              <li><a class="dropdown-item" onclick="go('')">Belarusian</a></li>
+              <li><a class="dropdown-item" onclick="go('')">German</a></li>
+              <li><a class="dropdown-item" onclick="go('')">Indonesian</a></li>
+              <li><a class="dropdown-item" onclick="go('')">Korean</a></li>
+              <li><a class="dropdown-item" onclick="go('')">Spanish</a></li>
             </ul>
           </div>
         </div>
     </div>
   </div>
+
+  <script>
+  function go(loc) {
+    document.getElementById('wp-iframe').src = loc;
+  }
+  </script>
 
   <style>
 
@@ -129,7 +135,7 @@
 
   <div class="container pdf-iframe"
     style="margin-bottom:100px; overflow:auto; -webkit-overflow-scrolling:touch; z-index:2;">
-    <iframe src="https://tea.xyz/tea.white-paper.pdf#toolbar=0&navpanes=0&view=fitH" width="100%" height="800px">
+    <iframe id="wp-iframe"src="https://tea.xyz/tea.white-paper.pdf#toolbar=0&navpanes=0&view=fitH" width="100%" height="800px">
     </iframe>
   </div>
 
