@@ -72,27 +72,58 @@
     </div>
     <div class="row">
       <hr>
-      <div class="col">
-        <h4>Our white paper is available in multiple languages</h4>
-        <p>Thanks to the tea community's generosity and time, our white paper is available in several world languages.</p>
-      </div>
-      <div class="col">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Choose a Language
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">English</a></li>
-            <li><a class="dropdown-item" href="#">Belarusian</a></li>
-            <li><a class="dropdown-item" href="#">German</a></li>
-            <li><a class="dropdown-item" href="#">Indonesian</a></li>
-            <li><a class="dropdown-item" href="#">Korean</a></li>
-            <li><a class="dropdown-item" href="#">Spanish</a></li>
-          </ul>
+        <div class="col mb-4 mt-3">
+          <h4>Our white paper is available in multiple languages</h4>
+          <p>Thanks to the tea community's generosity and time, our white paper is available in several world languages.</p>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle languages" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Choose a Language
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Belarusian</a></li>
+              <li><a class="dropdown-item" href="#">German</a></li>
+              <li><a class="dropdown-item" href="#">Indonesian</a></li>
+              <li><a class="dropdown-item" href="#">Korean</a></li>
+              <li><a class="dropdown-item" href="#">Spanish</a></li>
+            </ul>
+          </div>
         </div>
-      </div>
     </div>
   </div>
+
+  <style>
+
+    .languages{
+      border: 2px solid white;
+      border-radius: 30px;
+      width:240px;
+      background-color:#1C1E21;
+    }
+
+    .languages:hover{
+      background-color:#23282c;
+    }
+
+    .languages:focus{
+      background-color:#1C1E21;
+    }
+
+    .dropdown-menu{
+      width:240px;
+      background-color:#23282c;
+      color:white;
+    }
+
+    .dropdown-item{
+      color:white;
+    }
+
+    .dropdown-item:hover{
+      background-color: #54BAAB;
+    }
+
+  </style>
 
   <!-- Start PDF -->
 
