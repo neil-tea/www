@@ -3,7 +3,7 @@
 body{
   background-color: #1a1a1a;
   max-width: 1920px;
-  background-image: url("/Images/x-large-grid.svg");
+  background-image: url("/Images/xl-grid-quarter-opacity.svg");
   background-size: contain;
 }
 
@@ -22,7 +22,7 @@ body{
 
 @media only screen and (min-width: 1280px) {
   .container{
-    padding: 128px 150px 10px 132px;
+    padding: 128px 150px 10px 150px;
   }
 }
 
@@ -203,7 +203,7 @@ p{
 hr{
   border-bottom: 2px solid #949494 !important;
   opacity: 1;
-  margin:0px !important;
+  margin: 0px !important;
 }
 
 /* Homepage */
@@ -230,8 +230,17 @@ hr{
 
 /* Package Display Section */
 
+.grid-square{
+  margin-bottom: 20px;
+  height:320px;
+  background-color: gray;
+  width: 100%;
+}
+
 .package-label{
-  font-size: 1rem;
+  font-size: 14px;
+  float:left;
+  padding: 10px 0px;
 }
 
 .detail-btn{
