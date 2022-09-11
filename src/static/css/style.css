@@ -221,11 +221,6 @@ hr{
     padding: 80px !important;
   }
 
-  .grid-element{
-    z-index: 1;
-    position: absolute;
-    width:600px;
-  }
 }
 
 /* Package Display Section */
