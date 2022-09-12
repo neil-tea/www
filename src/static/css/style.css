@@ -215,12 +215,14 @@ hr{
   }
 
   .impact-section{
-    opacity: 0.5;
-    
+
   }
 
   .about-block{
-    padding: 80px !important;
+    padding: 80px 160px; !important;
+    margin: -200px 375px;
+    position: relative;
+    top:200px;
   }
 
 }
