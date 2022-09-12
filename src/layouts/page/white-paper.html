@@ -79,25 +79,31 @@
             <button class="btn btn-secondary dropdown-toggle languages" type="button" data-bs-toggle="dropdown" aria-expanded="false">
               Choose a Language
             </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" onclick="go('')">English</a></li>
-              <li><a class="dropdown-item" onclick="go('')">Belarusian</a></li>
-              <li><a class="dropdown-item" onclick="go('')">German</a></li>
-              <li><a class="dropdown-item" onclick="go('')">Indonesian</a></li>
-              <li><a class="dropdown-item" onclick="go('')">Korean</a></li>
-              <li><a class="dropdown-item" onclick="go('')">Spanish</a></li>
-            </ul>
+            <ul class="dropdown-menu" id="language-selector"></ul>
           </div>
         </div>
+      </div>
     </div>
-  </div>
 
-  <script>
-  function go(loc) {
-    document.getElementById('wp-iframe').src = loc;
-    document.getElementById('mobile-wp-download').href = loc;
-  }
-  </script>
+    <script>
+      const versions = [
+        ['English', ''],
+        ['беларускі', '_be']
+      ];
+
+      document.addEventListener('DOMContentLoaded', function () {
+        for (const lang of versions) {
+
+          $('#language-selector').append("<li><a class=\"dropdown-item\" onclick=\"go(\'" + lang[1] + "')\">" + lang[0] + "</a></li>");
+        }
+      }, false);
+
+      function go(suffix) {
+        const url = 'https://tea.xyz/tea.white-paper' + suffix + '.pdf';
+        document.getElementById('wp-iframe').setAttribute('src', url + '#toolbar=0&navpanes=0&view=fitH');
+        document.getElementById('mobile-wp-download').setAttribute('href', url);
+      }
+    </script>
 
   <style>
 
