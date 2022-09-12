@@ -173,12 +173,14 @@ p{
 
   h2{
     font-size: 6rem;
-    line-height: 8rem;
+    line-height: 9.3rem;
+    margin-bottom: 75px;
   }
 
   h3{
     font-size: 38px;
     line-height: 45px;
+    margin-bottom: 75px;
   }
 
   h4{
@@ -215,11 +217,12 @@ hr{
   }
 
   .impact-section{
+    margin-bottom:115px;
   }
 
   .about-block{
     padding: 80px 160px; !important;
-    margin: -200px 375px;
+    margin: -200px 150px 0px 150px;;
     position: relative;
     top:200px;
   }
