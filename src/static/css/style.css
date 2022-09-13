@@ -21,8 +21,27 @@ body{
 }
 
 @media only screen and (min-width: 1280px) {
+
   .container{
     padding: 128px 150px 10px 150px;
+  }
+
+  /* M5 Spacers (Bootstrap Utilities)*/
+
+  .m-5{
+    margin: 225px !important;
+  }
+  .mb-5{
+    margin-bottom: 225px !important;
+  }
+  .mt-5{
+    margin-top: 225px !important;
+  }
+  .ms-5{
+    margin-left: 225px !important;
+  }
+  .me-5{
+    margin-right: 225px !important;
   }
 }
 
