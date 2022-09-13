@@ -3,8 +3,10 @@
 body{
   background-color: #1a1a1a;
   max-width: 1920px;
+  /*
   background-image: url("/Images/xl-grid-quarter-opacity.svg");
   background-size: contain;
+  */
 }
 
 /*
