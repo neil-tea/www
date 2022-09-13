@@ -173,8 +173,8 @@ p{
 
   h2{
     font-size: 6rem;
-    line-height: 9.3rem;
-    margin-bottom: 75px;
+    line-height: 7rem;
+    margin-bottom: 37px;
   }
 
   h3{
@@ -191,7 +191,7 @@ p{
   .lead{
     font-size: 28px !important;
     line-height: 29px !important;
-    margin-top: -23px !important;
+    margin-bottom: 40px;
   }
 
   p{
@@ -228,8 +228,14 @@ hr{
   }
 
   .package_before{
-    margin-bottom: 225px;
+    padding-bottom: 225px !important;
   }
+
+  .statistics{
+    padding-bottom: 225px;
+  }
+
+
 
 }
 
