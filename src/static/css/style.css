@@ -181,6 +181,11 @@ p{
   color: #ffffff;
 }
 
+li{
+  font-family: "sono", sans-serif;
+  color: #ffffff;
+}
+
 /* Breakpoint-Specific Typography */
 
 
@@ -283,7 +288,11 @@ hr{
 /* Footer Styling */
 
 .footer-email{
-  padding: 35px 75px;
+  font-family: "pp-neue-machina", sans-serif;
+  text-transform: uppercase;
+  font-size: 38px;
+  line-height: 38px;
+  padding: 35px 0px;
   background: none;
   border: none;
 }
