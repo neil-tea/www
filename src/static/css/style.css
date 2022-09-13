@@ -45,6 +45,22 @@ body{
   .me-5{
     margin-right: 225px !important;
   }
+
+  .m-4{
+    margin: 150px !important;
+  }
+  .mb-4{
+    margin-bottom: 150px !important;
+  }
+  .mt-4{
+    margin-top: 150px !important;
+  }
+  .ms-4{
+    margin-left: 150px !important;
+  }
+  .me-4{
+    margin-right: 150px !important;
+  }
 }
 
 /* Navbar General */
