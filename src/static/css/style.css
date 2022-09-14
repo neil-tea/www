@@ -335,3 +335,25 @@ hr{
 .footer-content{
   padding-right: 100px;
 }
+
+.email-btn{
+  width: 16%;
+  border-left: 2px solid #949494;
+  border-right: none !important;
+  border-radius: 0px;
+  font-family: "pp-neue-machina", sans-serif;
+  text-transform: uppercase;
+  font-size: 38px;
+}
+
+.email-btn:hover{
+  background-color: #00ffd0;
+  color: #1a1a1a;
+  box-shadow: inset 0px 0px 0px 7px #1a1a1a !important;
+}
+
+.radio-btn-label{
+  font-family: "pp-neue-machina", sans-serif;
+  text-transform: uppercase;
+  font-size: 38px;
+}
