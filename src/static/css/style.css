@@ -25,7 +25,7 @@ body{
 @media only screen and (min-width: 1280px) {
 
   .container{
-    padding: 128px 150px 10px 150px;
+    padding: 75px 150px 75px 150px;
   }
 
   /* M5 Spacers (Bootstrap Utilities)*/
@@ -253,15 +253,12 @@ hr{
   }
 
   .package_before{
-    padding-bottom: 225px !important;
   }
 
   .statistics{
-    padding-bottom: 225px;
   }
 
   .partners{
-    padding-bottom: 225px;
   }
 
 }
