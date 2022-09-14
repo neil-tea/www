@@ -171,7 +171,7 @@
 
 <section class="statistics">
   <div class="container">
-    <div class="row">
+    <div class="row mb-5">
       <div class="col">
         <h2>sta'tea'stics</h2>
         <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -181,9 +181,47 @@
       <div class="col">
       </div>
     </div>
+    <div class="row">
+      <div class="col">
+        <div class="metric-block" style="float:right; margin-top:-300px;">
+          <p class="stat-head">PACKAGES AVAILABLE</p>
+          <p class="stat-number teal">5,103,789</p>
+        </div>
+        <div class="metric-block mb-5 mt-4">
+          <p class="stat-head">AUTHENTICATED DEVS</p>
+          <p class="stat-number teal">500,000</p>
+        </div>
+        <div class="metric-block" style="float:right;">
+          <p class="stat-head">OS CONTRIBUTIONS</p>
+          <p class="stat-number teal">500,000</p>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 {{- partial "full-width-cta.html" . -}}
+
+<style>
+
+  .metric-block{
+    padding: 75px;
+    border: 2px solid #949494;
+    max-width: 50%;
+    background-color: #1a1a1a;
+  }
+
+  .stat-head{
+    font-size: 24px;
+  }
+
+  .stat-number{
+    font-family: "pp-neue-machina", sans-serif;
+    font-size: 120px;
+    margin-top: -40px;
+    margin-bottom: -40px;
+  }
+
+</style>
 
 <!-- partners -->
 
