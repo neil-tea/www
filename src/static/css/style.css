@@ -348,3 +348,8 @@ hr{
   color: #1a1a1a;
   box-shadow: inset 0px 0px 0px 7px #1a1a1a !important;
 }
+
+.social-icon{
+  display: inline-block;
+  margin-right: 20px !important;
+}
