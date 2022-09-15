@@ -10,7 +10,7 @@ body{
 
 .container{
   max-width: 1920px;
-  padding:0px;
+  padding:20px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -127,8 +127,8 @@ li{
 @media only screen and (min-width: 1200px) {
 
   h1{
-    font-size: 13.25rem;
-    line-height: 14rem;
+    font-size: 11.5vw;
+    line-height: 12.4vw;
     margin-top: -20px;
     margin-left: -15px;
   }
@@ -162,7 +162,8 @@ li{
   }
 
 }
-/* Medium Screens*/
+/*
+
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
 
   h1{
@@ -201,7 +202,7 @@ li{
   }
 
 }
-/* Small Screens */
+
 @media only screen and (max-width: 576px) and (max-width: 768px){
 
   h1{
@@ -240,7 +241,7 @@ li{
   }
 
 }
-/* Extra Small Screens */
+
 @media only screen and (max-width: 576px) {
 
   h1{
@@ -277,6 +278,7 @@ li{
   }
 
 }
+*/
 
 /* Spacers & Dividers */
 
