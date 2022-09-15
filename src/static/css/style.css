@@ -3,10 +3,8 @@
 body{
   background-color: #1a1a1a;
   max-width: 1920px;
-  /*
   background-image: url("/Images/xl-grid-quarter-opacity.svg");
   background-size: contain;
-  */
 }
 
 /*
@@ -194,6 +192,8 @@ li{
   h1{
     font-size: 13.25rem;
     line-height: 14rem;
+    margin-top: -20px;
+    margin-left: -15px;
   }
 
   h2{
