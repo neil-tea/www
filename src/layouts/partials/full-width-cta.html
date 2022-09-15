@@ -33,10 +33,24 @@
     padding: 0px 160px;
   }
 
+  /* Icon Styling */
+
+ .btn-primary .icon-enter-arrow{
+   display: inline-block;
+   position: relaitve;
+   margin-right: 10px;
+   transition: 0.2s linear;
+ }
+
+ .btn-primary:hover .icon-enter-arrow{
+   display: inline-block;
+   transform: rotate(-45deg) !important;
+ }
+
 </style>
 
 <hr>
   <div class="row button-container">
-    <a href="#" role="button" class="btn btn-primary auth-btn mt-lg-0 mt-md-0 mt-sm-4 mt-4" id="nav-cta">Authenticate with tea<span style="float:right; margin-top:15px;font-size:1.2rem;"><u id="count1"></u> devs authenticated</span></a>
+    <a href="#" role="button" class="btn btn-primary auth-btn mt-lg-0 mt-md-0 mt-sm-4 mt-4" id="nav-cta"><i class="icon-enter-arrow"></i>Authenticate with tea<span style="float:right; margin-top:15px;font-size:1.2rem;"><u id="count1"></u> devs authenticated</span></a>
   </div>
 <hr>
