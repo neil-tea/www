@@ -11,7 +11,7 @@
     width:300px;
     right: 225px;
     top:300px;
-    z-index:-2;
+    z-index: 0;
   }
 
   #gen-art-2{
@@ -19,13 +19,39 @@
     width:225px;
     right: 375px;
     top:600px;
-    z-index:-1;
+    z-index: 0;
+  }
+
+  #hero-grid-system{
+    position:absolute;
+    width:100%;
+    z-index: -3;
+    margin-top:-5px;
+  }
+
+  .hero-section{
+    background-image: url("/Images/x-large-grid-hero.svg");
+    background-attachment: fixed;
+    background-position: center-top;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+
+  .hero-container{
+    position:relative;
+    z-index: 2;
+  }
+
+  .full-width-cta-container{
+    position:relative;
+    z-index: 2;
   }
 
 </style>
 
 <img src="/Images/gen-art-1.png" alt="gen-art-1" class="gen-art" id="gen-art-1">
 <img src="/Images/gen-art-2.png" alt="gen-art-2" class="gen-art" id="gen-art-2">
+<!--<img src="/Images/x-large-grid-hero.svg" id="hero-grid-system" alt="hero-grid-system">-->
   <div class="container hero-container">
     <div class="row">
       <div class="col">
@@ -38,7 +64,9 @@
       </div>
     </div>
   </div>
-  {{- partial "full-width-cta.html" . -}}
+  <div class="full-width-cta-container">
+   {{- partial "full-width-cta.html" . -}}
+  </div>
 </section>
 
 <!-- Teal Impact Section -->
@@ -61,7 +89,7 @@
 
 <!-- Package Section: Before -->
 
-<section class="black-bg">
+<section>
   <div class="container package_before">
     <div class="row">
       <div class="col">
@@ -92,6 +120,7 @@
         border-left: 2px solid #949494;
         border-right: 2px solid #949494;
         height: 100%;
+        padding: 25px;
       }
 
       .package-row{
@@ -172,8 +201,8 @@
 <section>
   <hr>
     <div class="container">
-      <div class="row">
-        <div class="col m-5">
+      <div class="row" style="margin-bottom: 20px;">
+        <div class="col" style="margin: 150px 0px;">
           <h3 class="text-center">Stay tuned for our full launch.</h3>
           <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua <a>Discord Community</a>.</p>
         </div>
