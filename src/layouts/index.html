@@ -92,12 +92,17 @@
         border-left: 2px solid #949494;
         border-right: 2px solid #949494;
         height: 100%;
+        padding: 25px;
+      }
+
+      .package-row{
+        border-bottom: 1px solid #949494;
       }
     </style>
 
     <!-- Start Package Grid -->
 
-    <div class="row mb-4 gx-4">
+    <div class="row package-row mb-4 gx-4">
       <div class="col-lg-3 col-md-4 col-sm-12 col-12">
         {{- partial "package-thumbnail.html" . -}}
       </div>
@@ -112,7 +117,7 @@
       </div>
     </div>
 
-    <div class="row mb-4 gx-4">
+    <div class="row package-row mb-4 gx-4">
       <div class="col-lg-3 col-md-4 col-sm-12 col-12">
         {{- partial "package-thumbnail.html" . -}}
       </div>
@@ -127,7 +132,7 @@
       </div>
     </div>
 
-    <div class="row mb-4 gx-4">
+    <div class="row package-row mb-4 gx-4">
       <div class="col-lg-3 col-md-4 col-sm-12 col-12">
         {{- partial "package-thumbnail.html" . -}}
       </div>
@@ -142,7 +147,7 @@
       </div>
     </div>
 
-    <div class="row mb-4 gx-4">
+    <div class="row package-row mb-4 gx-4">
       <div class="col-lg-3 col-md-4 col-sm-12 col-12">
         {{- partial "package-thumbnail.html" . -}}
       </div>
