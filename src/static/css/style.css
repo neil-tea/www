@@ -350,6 +350,7 @@ hr{
 }
 
 .social-icon{
-  display: inline-block;
   margin-right: 20px !important;
+  position: relative;
+  top:3px;
 }
