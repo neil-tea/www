@@ -124,7 +124,7 @@ li{
 
 
 /* Extra-Large Screens*/
-@media only screen and (min-width: 1200px) {
+/*@media only screen and (min-width: 1200px) {*/
 
   h1{
     font-size: 11.5vw;
@@ -160,8 +160,6 @@ li{
   p{
     font-size: 20px;
   }
-
-}
 /*
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
