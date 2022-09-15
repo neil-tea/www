@@ -13,7 +13,7 @@ body{
   padding:0px;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
 
   .container{
     padding: 75px 150px 75px 150px;
@@ -121,16 +121,131 @@ li{
 }
 
 /* Breakpoint-Specific Typography */
-/*Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.*/
 
 
-@media only screen and (min-width: 1280px) {
+/* Extra-Large Screens*/
+@media only screen and (min-width: 1200px) {
 
   h1{
     font-size: 13.25rem;
     line-height: 14rem;
     margin-top: -20px;
     margin-left: -15px;
+  }
+
+  h2{
+    font-size: 6rem;
+    line-height: 7rem;
+    margin-bottom: 37px;
+  }
+
+  h3{
+    font-size: 3.8rem;
+    line-height: 80px;
+    margin-bottom: 45px;
+    margin-top: 25px;
+  }
+
+  h4{
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .lead{
+    font-size: 28px !important;
+    line-height: 29px !important;
+    margin-bottom: 40px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+}
+/* Medium Screens*/
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+
+  h1{
+    font-size: 10rem;
+    line-height: 10rem;
+    margin-top: -20px;
+    margin-left: -15px;
+  }
+
+  h2{
+    font-size: 6rem;
+    line-height: 7rem;
+    margin-bottom: 37px;
+  }
+
+  h3{
+    font-size: 3.8rem;
+    line-height: 80px;
+    margin-bottom: 45px;
+    margin-top: 25px;
+  }
+
+  h4{
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .lead{
+    font-size: 28px !important;
+    line-height: 29px !important;
+    margin-bottom: 40px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+}
+/* Small Screens */
+@media only screen and (max-width: 576px) and (max-width: 768px){
+
+  h1{
+    font-size: 10rem;
+    line-height: 10rem;
+    margin-top: -20px;
+    margin-left: -15px;
+  }
+
+  h2{
+    font-size: 6rem;
+    line-height: 7rem;
+    margin-bottom: 37px;
+  }
+
+  h3{
+    font-size: 3.8rem;
+    line-height: 80px;
+    margin-bottom: 45px;
+    margin-top: 25px;
+  }
+
+  h4{
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .lead{
+    font-size: 28px !important;
+    line-height: 29px !important;
+    margin-bottom: 40px;
+  }
+
+  p{
+    font-size: 20px;
+  }
+
+}
+/* Extra Small Screens */
+@media only screen and (max-width: 576px) {
+
+  h1{
+    font-size: 8rem;
+    line-height: 8rem;
   }
 
   h2{
@@ -173,7 +288,7 @@ hr{
 
 /* Homepage */
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
 
   .hero-section{
   }
