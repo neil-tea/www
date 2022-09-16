@@ -16,7 +16,7 @@ body{
 @media only screen and (min-width: 1200px) {
 
   .container{
-    padding: 75px 150px 75px 150px;
+    padding: 4.185vw 8.371vw 4.185vw 8.371vw;
   }
 
   /* M5 Spacers (Bootstrap Utilities)*/
@@ -46,13 +46,12 @@ div.container-fluid.top-nav{
 
 .navbar{
   background-color: #1a1a1a !important;
-  height: 80px;
+  height: 4.5vw;
   border-bottom: 2px solid #949494;
 }
 
 .nav-logo{
-  width: 78px;
-  transition: 0.2s ease-in-out;
+  width: 4.4vw;
 }
 
 .nav-logo:hover{
@@ -62,6 +61,7 @@ div.container-fluid.top-nav{
 .nav-item{
   font-family: "pp-neue-machina", sans-serif;
   text-transform: uppercase;
+  font-size: .8vw;
 }
 
 /* Brand Colors */
