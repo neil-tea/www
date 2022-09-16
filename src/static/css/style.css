@@ -94,6 +94,7 @@ h1{
 h2{
   font-family: "pp-neue-machina", sans-serif;
   color:#00ffd0;
+  margin-top: -1.8vw !important;
 }
 
 h3{
@@ -290,15 +291,11 @@ hr{
   }
 
   .impact-section{
-
-  }
-
-  .about-block{
-    padding: 4.464vw 18.929vw; !important;
-    margin: -11.161vw 8.371vw 0vw 8.371vw;
-    position: relative;
-    top: 11.161vw;
-    border: 2px solid #949494;
+    background-image: url("/Images/impact-section-grid.svg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    padding-top: 3.5vw;
+    opacity: 1;
   }
 
   .package_before{
