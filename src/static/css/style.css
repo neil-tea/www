@@ -292,8 +292,9 @@ hr{
 
   .impact-section{
     background-image: url("/Images/impact-section-grid.svg");
+    background-attachment: fixed;
     background-repeat: repeat-y;
-    background-size: cover;
+    background-size: contain;
     padding-top: 3.5vw;
     opacity: 1;
   }
@@ -305,6 +306,11 @@ hr{
     background-size: cover;
     padding-top: 12.556vw;
     padding-bottom: 12.556vw;
+  }
+
+  .package-grid-header{
+    padding-top:0.5vw;
+    padding-bottom: 2.9vw;
   }
 
   .package-cta{
