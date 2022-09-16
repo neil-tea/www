@@ -300,7 +300,7 @@ hr{
   }
 
   .package_before{
-    background-image: url("/Images/x-large-grid.svg");
+    background-image: url("/Images/xl-grid-half-right.svg");
     background-attachment: fixed;
     background-repeat: repeat-y;
     background-size: cover;
