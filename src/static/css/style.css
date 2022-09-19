@@ -76,7 +76,7 @@ body{
   }
 
   .nav-logo{
-    width: 4.4vw;
+    width: 4.9vw;
   }
 
   .nav-logo:hover{
@@ -86,7 +86,7 @@ body{
   .nav-item{
     font-family: "pp-neue-machina", sans-serif;
     text-transform: uppercase;
-    font-size: .8vw;
+    font-size: 1.2vw;
   }
 }
 
