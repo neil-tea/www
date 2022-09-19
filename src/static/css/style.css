@@ -274,9 +274,9 @@ li{
 @media only screen and (max-width: 576px) and (max-width: 768px){
 
   h1{
-    font-size: 20vw;
+    font-size: 20vw !important;
     line-height: 10vw;
-    margin-top: -20px;
+    margin-top: 1vw;
     margin-left: -15px;
   }
 
@@ -346,7 +346,6 @@ li{
   }
 
 }
-*/
 
 /* Spacers & Dividers */
 
