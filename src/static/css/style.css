@@ -126,8 +126,8 @@ li{
   h1{
     font-size: 11.5vw;
     line-height: 12.4vw;
-    margin-top: -20px;
-    margin-left: -15px;
+    margin-top: -1.116vw;
+    margin-left: -0.837vw;
   }
 
   h2{
@@ -157,15 +157,14 @@ li{
   p{
     font-size: 1.116vw;
   }
-/*
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
 
   h1{
-    font-size: 10rem;
-    line-height: 10rem;
-    margin-top: -20px;
-    margin-left: -15px;
+    font-size: 10.2rem;
+    line-height: 11rem;
+    margin-top: 3vw;
+    margin-left: -0.837vw;
   }
 
   h2{
@@ -197,7 +196,7 @@ li{
   }
 
 }
-
+/*
 @media only screen and (max-width: 576px) and (max-width: 768px){
 
   h1{
