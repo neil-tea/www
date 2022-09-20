@@ -59,7 +59,7 @@ body{
   .nav-item{
     font-family: "pp-neue-machina", sans-serif;
     text-transform: uppercase;
-    font-size: .8vw;
+    font-size: 1vw;
   }
 }
 
@@ -232,7 +232,14 @@ li{
     font-size: 1.116vw;
   }
 
-@media only screen and (min-width: 768px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
 
   h1{
     font-size: 14vw;
@@ -271,13 +278,13 @@ li{
 
 }
 
-@media only screen and (max-width: 576px) and (max-width: 768px){
+@media only screen and (min-width: 576px) and (max-width: 768px){
 
   h1{
-    font-size: 20vw !important;
-    line-height: 10vw;
+    font-size: 18.5vw;
+    line-height: 20vw;
     margin-top: 1vw;
-    margin-left: -15px;
+    margin-left: -2vw;
   }
 
   h2{
