@@ -8,6 +8,10 @@
   src: url("/fonts/Sono-Light.woff2");
 }
 
+h1,h2,h3,h4,h5,h6,p,.lead{
+  hyphens: auto;
+}
+
 h1{
   font-family: "pp-neue-machina", sans-serif;
   color:#00ffd0;
@@ -84,9 +88,9 @@ li{
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 
   h1{
-    font-size: 11.5vw;
-    line-height: 12.4vw;
-    margin-top: -1.116vw;
+    font-size: 14vw;
+    line-height: 15vw;
+    margin-top: -0.3vw;
     margin-left: -0.837vw;
   }
 
@@ -200,7 +204,7 @@ li{
 @media only screen and (max-width: 576px) {
 
   h1{
-    font-size: 8rem;
+    font-size: 20vw;
     line-height: 8rem;
   }
 
