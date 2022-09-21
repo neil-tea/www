@@ -4,9 +4,6 @@ html,body{
   background-color: #1a1a1a;
   max-width: 1920px;
   overflow-x: hidden;
-  /*
-  background-image: url("/Images/xl-grid-quarter-opacity.svg");
-  background-size: contain;*/
 }
 
 .container{
@@ -95,8 +92,9 @@ hr{
   }
 
   .statistics{
-    background-image: url("/Images/x-large-grid.svg");
+    background-image: url("/Images/x-large-stats-grid.svg");
     background-attachment: fixed;
+    background-position: top;
     background-repeat: repeat-y;
     background-size: cover;
   }
