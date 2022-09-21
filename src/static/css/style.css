@@ -1,8 +1,9 @@
 /* General/Utilities */
 
-body{
+html,body{
   background-color: #1a1a1a;
   max-width: 1920px;
+  overflow-x: hidden;
   /*
   background-image: url("/Images/xl-grid-quarter-opacity.svg");
   background-size: contain;*/
