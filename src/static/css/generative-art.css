@@ -109,3 +109,17 @@
   background-repeat: repeat;
   background-size: cover;
 }
+
+#gen-art-9{
+  position:absolute;
+  width: 8.371vw;
+  height: 24vw;
+  margin-top: 70vw;
+  right: 8.371vw;;
+  z-index: 0;
+  background-image: url("/Images/gen-art/gen-art-_0010_DALL·E 2022-09-01 10.48.33 - bright blue and green _It’s time we stop robbing Peter to pay Mark and Jeff._.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
