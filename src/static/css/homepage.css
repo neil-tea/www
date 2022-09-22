@@ -81,7 +81,9 @@ hr{
 
 @media only screen and (max-width: 576px) {
 
-  
+  .hero-subhead{
+    width: 100%;
+  }
 
 }
 
