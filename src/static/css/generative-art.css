@@ -123,3 +123,16 @@
   background-repeat: repeat;
   background-size: cover;
 }
+
+#gen-art-10{
+  position:absolute;
+  width: 50vw;
+  height: 25vw;
+  right: 8.371vw;;
+  z-index: 0;
+  background-image: url("/Images/gen-art/colorful-sandal.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
