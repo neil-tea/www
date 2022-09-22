@@ -211,11 +211,11 @@
 @media only screen and (max-width: 576px) {
 
   .btn-primary{
-    padding: 7.5vw 11.200vw;
+    padding: 7.5vw 11.200vw !important;
     border-radius: 0px !important;
     font-family: "pp-neue-machina", sans-serif;
     text-transform: uppercase;
-    font-size: 4vw;
+    font-size: 4vw !important;
     border-left: 2px solid #949494 !important;
     border-right: 2px solid #949494 !important;
     background-color: #1a1a1a !important;
