@@ -96,9 +96,17 @@
 
 <!-- Package Grid -->
 
-{{- partial "package-grid.html" . -}}
+<!-- Desktop/Tablet Package Display -->
 
-{{- partial "swiper.html" . -}}
+  <span class="grid-package-display">
+    {{- partial "package-grid.html" . -}}
+  </span>
+
+<!-- Mobile Package Display -->
+
+  <span class="swiper-package-display">
+    {{- partial "swiper.html" . -}}
+  </span>
 
 <!-- Style for Swiper -->
 
