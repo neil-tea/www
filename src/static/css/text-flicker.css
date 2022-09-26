@@ -6,7 +6,7 @@ h1{
 
 @keyframes text-flicker {
   0% {
-    opacity:0.1;
+    opacity:.1;
   }
 
   2% {
