@@ -163,6 +163,26 @@ hr{
     background-size: cover;
   }
 
+  .metric-block{
+    padding: 4.185vw;
+    border: 2px solid #949494;
+    max-width: 41.741vw;
+    background-color: #1a1a1a;
+    position: relative;
+    z-index:2;
+  }
+
+  .stat-head{
+    font-size: 1.339vw;
+  }
+
+  .stat-number{
+    font-family: "pp-neue-machina", sans-serif;
+    font-size: 6.696vw;
+    margin-top: -2.232vw;
+    margin-bottom: -2.232vw;
+  }
+
   .partners{
     background-image: url("/Images/x-large-grid.svg");
     background-attachment: fixed;
