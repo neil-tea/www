@@ -12,7 +12,6 @@
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
-    transition: 0.2s ease-in-out;
   }
 
   #gen-art-2{
@@ -27,7 +26,6 @@
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
-    transition: 0.2s ease-in-out;
   }
 
   #gen-art-3{
