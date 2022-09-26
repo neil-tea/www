@@ -4,6 +4,9 @@
     <p class="card-text">V2.35 >45 installs</p>
     {{- partial "detail-btn.html" . -}}
   </div>
+  <div class="card-body thumbnail-body-mobile">
+    <button href="#" class="detail-btn-mobile"><i class="icon-enter-arrow"></i>details</button>
+  </div>
 </div>
 
 <style>
@@ -47,18 +50,16 @@
   .thumbnail-body{
     border-radius: 0px !important;
     padding: 0vw;
+    display:none;
+  }
+
+  .thumbnail-body-mobile{
+    background-color: #8000ff;
   }
 
   .card-img-top{
     border-radius: 0px;
-    margin-bottom: 1.674vw;
-  }
-
-  .card-text{
-    font-size: 0.781vw;
-    float:left;
-    position: relative;
-    top:0.502vw;
+    margin-bottom: 0vw;
   }
 
 }
