@@ -1,7 +1,9 @@
 <div class="card card-thumbnail" style="width: 100%">
   <img src="/Images/package-thumb-1.jpg" class="card-img-top" alt="..." style="width:100%; height:100%;">
   <div class="card-body thumbnail-body">
-    <p class="card-text">V2.35 >45 installs</p>
+    <div class="card-text-container">
+      <p class="card-text">V2.35 >45 installs</p>
+    </div>
     {{- partial "detail-btn.html" . -}}
   </div>
   <div class="card-body thumbnail-body-mobile">
@@ -35,6 +37,12 @@
     float:left;
     position: relative;
     top:0.502vw;
+  }
+
+  .card-text-container{
+    float:left;
+    position: relative;
+    width:48%;
   }
 
   .thumbnail-body-mobile{
