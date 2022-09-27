@@ -260,6 +260,10 @@ hr{
     height:10vw;
   }
 
+  .package-before-section{
+    padding: 4vw !important;
+  }
+
   .package_before{
     background-image: url("/Images/small-grid.svg");
     background-position: top;
