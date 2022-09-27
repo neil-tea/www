@@ -217,4 +217,13 @@ hr{
     height: 75px;
   }
 
+  .package_before{
+    background-image: url("/Images/small-grid.svg");
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: contain;
+    padding-top: 12.556vw;
+    padding-bottom: 12.556vw;
+  }
+
 }
