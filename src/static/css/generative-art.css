@@ -570,6 +570,8 @@
 
 }
 
+/* Different generative art at smaller breakpoints; parallax effect/location simply doesn't work */
+
 @media only screen and (max-width: 576px) {
 
   #gen-art-1,
