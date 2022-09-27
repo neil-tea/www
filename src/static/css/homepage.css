@@ -117,25 +117,24 @@ hr{
 
 }
 
-.hero-section{
-  background-image: url("/Images/x-large-grid-hero.svg");
-  background-attachment: fixed;
-  background-position: top;
-  background-repeat: repeat;
-  background-size: contain;
-}
-
-.hero-bottom{
-  background-image: url("/Images/x-large-grid-hero.svg");
-  background-attachment: fixed;
-  background-position: center-top;
-  background-repeat: repeat;
-  background-size: contain;
-  height: 75px;
-}
-
-
 @media only screen and (min-width: 1200px) {
+  
+  .hero-section{
+    background-image: url("/Images/x-large-grid-hero.svg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+
+  .hero-bottom{
+    background-image: url("/Images/x-large-grid-hero.svg");
+    background-attachment: fixed;
+    background-position: center-top;
+    background-repeat: repeat;
+    background-size: contain;
+    height: 75px;
+  }
 
   .impact-section{
     background-image: url("/Images/impact-section-grid.svg");
