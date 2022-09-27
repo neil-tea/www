@@ -49,33 +49,9 @@
       <div class="col-lg-4 mt-3">
         <h6 class=" mb-4">Get updates to your inbox</h6>
 
-<!-- Start Sendx Form Module -->
+<!-- Start klaviyo Form Module -->
 
-      <div class="sendx-modal-TRDBBvXuDV3vy1t0U684MU">
-        <div class="sendx-modal-content-TRDBBvXuDV3vy1t0U684MU sendx-modal">
-          <div class="sendx-modal-right-TRDBBvXuDV3vy1t0U684MU">
-            <div class="sendx-modal-body-TRDBBvXuDV3vy1t0U684MU">
-	             <form class="sendx-submit-form-TRDBBvXuDV3vy1t0U684MU" method="post" action="https://app.sendx.io/api/v1/form/TRDBBvXuDV3vy1t0U684MU">
-	                <input id="SubscriberForm-Email-TRDBBvXuDV3vy1t0U684MU" type="Email" class="sendx-field-TRDBBvXuDV3vy1t0U684MU email-field email-field-footer mb-3" data-attr-type="0" name="Email" placeholder="Add your email_" required>
-	                <input type="submit" class="sendx-submit-TRDBBvXuDV3vy1t0U684MU sendx-button-TRDBBvXuDV3vy1t0U684MU btn-primary email-submit"  name="subscribe" value="Subscribe">
-	               </input>
-               </form>
-	             <div class="sendx-close-text-TRDBBvXuDV3vy1t0U684MU">
-              <p></p>
-	           </div>
-	         <div style="display:flex; align-items:baseline;" class="sendx-gdpr-TRDBBvXuDV3vy1t0U684MU-wrapper">
-	               <input class="sendx-gdpr-TRDBBvXuDV3vy1t0U684MU" type="checkbox"></input><span class="sendx-gdpr-content-TRDBBvXuDV3vy1t0U684MU ms-2"><p>Opt in to receive updates from us </p></span>
-    	         </div>
-    	       </div>
-          </div>
-        </div>
-    </div>
-
-    <style>
-      .email-field-footer{
-        width:100% !important;
-      }
-    </style>
+        {{- partial "klaviyo-form.html" . -}}
 
 <!-- End Sendx Form -->
 
