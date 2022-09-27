@@ -118,7 +118,7 @@ hr{
 }
 
 @media only screen and (min-width: 1200px) {
-  
+
   .hero-section{
     background-image: url("/Images/x-large-grid-hero.svg");
     background-attachment: fixed;
@@ -167,18 +167,6 @@ hr{
     background-size: cover;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
   .statistics{
     background-image: url("/Images/x-large-stats-grid.svg");
     background-attachment: fixed;
@@ -207,23 +195,26 @@ hr{
     margin-bottom: -2.232vw;
   }
 
-
-
-
-
-
-
-
-
-
-
-
-
   .partners{
     background-image: url("/Images/x-large-grid.svg");
     background-attachment: fixed;
     background-repeat: repeat-y;
     background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+
+  .hero-section{
+    background-image: url("/Images/small-grid.svg");
+    background-position: top;
+    background-repeat: repeat-y;
+    background-size: contain;
+  }
+
+  .hero-bottom{
+    height: 75px;
   }
 
 }
