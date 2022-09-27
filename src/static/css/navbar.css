@@ -1,9 +1,5 @@
 /* Navbar General */
 
-html,body{
-  margin-top: 2.2vw;
-}
-
 .navbar{
   position: fixed;
   width:100%;
