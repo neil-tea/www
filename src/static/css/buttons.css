@@ -92,7 +92,7 @@
 
   .btn-primary .icon-enter-arrow{
    display: inline-block;
-   position: relaitve;
+   position: relative;
    margin-right: 0.558vw;
    transition: 0.2s linear;
   }
@@ -144,7 +144,7 @@
 
   .btn-primary .icon-enter-arrow{
    display: inline-block;
-   position: relaitve;
+   position: relative;
    margin-right: 0.558vw;
    transition: 0.2s linear;
   }
@@ -196,7 +196,7 @@
 
   .btn-primary .icon-enter-arrow{
    display: inline-block;
-   position: relaitve;
+   position: relative;
    margin-right: 0.558vw;
    transition: 0.2s linear;
   }
@@ -211,7 +211,7 @@
 @media only screen and (max-width: 576px) {
 
   .btn-primary{
-    padding: 7.5vw 11.200vw !important;
+    padding: 7.5vw 7.5vw !important;
     border-radius: 0px !important;
     font-family: "pp-neue-machina", sans-serif;
     text-transform: uppercase;
@@ -241,7 +241,7 @@
   }
 
   .button-container{
-    padding: 0vw 8.929vw;
+    padding: 0vw 14vw !important;
   }
 
   .dev-count{
