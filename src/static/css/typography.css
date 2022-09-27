@@ -230,8 +230,8 @@ li{
 @media only screen and (max-width: 576px) {
 
   h1{
-    font-size: 21.5vw;
-    line-height: 20.4vw;
+    font-size: 21.5vw !important;
+    line-height: 20.4vw !important;
   }
 
   h2{
