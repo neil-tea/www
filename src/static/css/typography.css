@@ -230,8 +230,8 @@ li{
 @media only screen and (max-width: 576px) {
 
   h1{
-    font-size: 24vw;
-    line-height: 22vw;
+    font-size: 21.5vw;
+    line-height: 20.4vw;
   }
 
   h2{
@@ -253,9 +253,8 @@ li{
   }
 
   .lead{
-    font-size: 28px !important;
-    line-height: 29px !important;
-    margin-bottom: 40px;
+    font-size: 4.800vw !important;
+    line-height: 5vw !important;
   }
 
   p{

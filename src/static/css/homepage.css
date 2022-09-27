@@ -71,7 +71,7 @@
 
   .container{
     max-width: 1920px;
-    padding: 6.7vw 5vw;
+    padding: 5.4vw 3vw;
   }
 }
 
@@ -241,14 +241,23 @@ hr{
 @media only screen and (max-width: 576px) {
 
   .hero-section{
+    padding: 4vw !important;
+  }
+
+  .hero-container{
     background-image: url("/Images/small-grid.svg");
     background-position: top;
     background-repeat: repeat-y;
     background-size: cover;
+    padding-bottom: 16vw;
+  }
+
+  .hero-float{
+    float: none !important;
   }
 
   .hero-bottom{
-    height: 75px;
+    height:10vw;
   }
 
   .package_before{
