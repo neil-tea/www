@@ -6,15 +6,32 @@ title = 'Equitable Open-Source for Web3'
 
 [menu]
   [[menu.main]]
-    identifier = 'media'
-    name = 'Media'
-    title = 'media'
-    url = 'https://medium.com/teaxyz'
-    weight = 5
-
+    identifier = 'why-tea'
+    name = 'Why tea?'
+    title = 'why tea?'
+    url = '/#why-tea'
+    weight = 2
+  [[menu.main]]
+    identifier = 'features'
+    name = 'Features'
+    title = 'features'
+    url = '/#features'
+    weight = 3
   [[menu.main]]
     identifier = 'community'
     name = 'Community'
     title = 'community'
     url = '/#community'
+    weight = 4
+  [[menu.main]]
+    identifier = 'blog'
+    name = 'Blog'
+    title = 'blog'
+    url = 'https://medium.com/teaxyz'
+    weight = 5
+  [[menu.main]]
+    identifier = 'linktree'
+    name = 'Linktree'
+    title = 'linktree'
+    url = 'https://linktr.ee/teaxyz'
     weight = 6
