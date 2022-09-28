@@ -248,11 +248,11 @@ li{
 
   .lead{
     font-size: 4.800vw !important;
-    line-height: 5vw !important;
+    line-height: 6vw !important;
   }
 
   p{
-    font-size: 20px;
+    font-size: 4vw;
   }
 
 }

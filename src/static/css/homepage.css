@@ -281,12 +281,12 @@ hr{
     background-repeat: repeat-y;
     background-size: cover;
     padding-top: 16vw;
-    padding-bottom: 22vw;
+    padding-bottom: 21vw;
     border: 1px solid #949494;
   }
 
   .hero-container h1{
-    margin-bottom: 4vw;
+    margin-bottom: 5vw;
   }
 
   .hero-float{
