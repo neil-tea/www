@@ -26,8 +26,13 @@
 
   .container{
     max-width: 1920px;
-    padding: 4.185vw 8.371vw 4.185vw 8.371vw;
+    padding: 5vw 10vw 4.185vw 10vw !important;
   }
+
+  .hero-float{
+    float: none !important;
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
