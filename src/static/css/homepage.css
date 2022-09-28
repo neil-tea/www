@@ -266,11 +266,7 @@ hr{
   }
 
   .package_before{
-    background-image: url("/Images/small-grid.svg");
-    background-position: top;
-    background-repeat: repeat;
-    background-size: contain;
-    border: 1px solid #949494;
+
   }
 
 }
