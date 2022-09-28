@@ -401,6 +401,19 @@ hr{
     padding: 4vw !important;
   }
 
+  .partner-logo{
+    padding: 0px !important;
+  }
+
+  #binance-logo{
+    width: 50% !important;
+    margin-bottom: 5vw !important;
+  }
+
+  #galaxy-eco-labs{
+    width: 90% !important;
+  }
+
   .footer{
     padding: 4vw !important;
   }
