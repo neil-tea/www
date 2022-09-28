@@ -195,6 +195,10 @@
     padding: 0vw 8.929vw;
   }
 
+  .dev-count{
+    display: none;
+  }
+
   /* Icon Styling */
 
   .btn-primary .icon-enter-arrow{

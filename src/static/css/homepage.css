@@ -280,8 +280,13 @@ hr{
     background-position: top;
     background-repeat: repeat-y;
     background-size: cover;
-    padding-bottom: 15vw;
+    padding-top: 16vw;
+    padding-bottom: 22vw;
     border: 1px solid #949494;
+  }
+
+  .hero-container h1{
+    margin-bottom: 4vw;
   }
 
   .hero-float{
@@ -289,7 +294,7 @@ hr{
   }
 
   .hero-bottom{
-    height:10vw;
+    height:4vw;
   }
 
   .package-before-section{
