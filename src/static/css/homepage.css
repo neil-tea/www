@@ -193,11 +193,6 @@ hr{
     padding-bottom: 12.556vw;
   }
 
-  .package-grid-header{
-    padding-top:0.5vw;
-    padding-bottom: 2.9vw;
-  }
-
   .package-cta{
     background-image: url("/Images/x-large-grid.svg");
     background-attachment: fixed;
@@ -298,10 +293,8 @@ hr{
   }
 
   .impact-section{
-
     padding-top: 20vw;
     padding-bottom: 20vw;
-
   }
 
   .package-before-section{
@@ -309,10 +302,13 @@ hr{
   }
 
   .package_before{
-
     padding-top: 20vw;
     padding-bottom: 20vw;
+  }
 
+  .package-grid-header{
+    padding-left:7vw !important;
+    padding-left:7vw !important;
   }
 
 }
