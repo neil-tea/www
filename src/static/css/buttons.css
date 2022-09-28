@@ -55,7 +55,7 @@
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 
   .btn-primary{
-    padding: 2.455vw 4.185vw;
+    padding: 3.5vw 4.185vw;
     border-radius: 0px !important;
     font-family: "pp-neue-machina", sans-serif;
     text-transform: uppercase;
@@ -79,9 +79,12 @@
     border-left-color:#00ffd0;
     border-right-color:#00ffd0;
     box-shadow: inset 0vw 0vw 0vw 0.558vw #1a1a1a !important;
-    padding: 2.455vw 5.580vw;
     border-top-color:#1a1a1a;
     border-bottom-color: #1a1a1a;
+  }
+
+  .dev-count{
+    font-size: 1.2vw !important;
   }
 
   .button-container{
@@ -159,11 +162,11 @@
 @media only screen and (min-width: 576px) and (max-width: 768px){
 
   .btn-primary{
-    padding: 2.455vw 4.185vw;
+    padding: 5vw 4vw !important;
     border-radius: 0px !important;
     font-family: "pp-neue-machina", sans-serif;
     text-transform: uppercase;
-    font-size: 2vw;
+    font-size: 3.5vw;
     border-left: 2px solid #949494 !important;
     border-right: 2px solid #949494 !important;
     background-color: #1a1a1a !important;
