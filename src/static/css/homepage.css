@@ -397,6 +397,14 @@ hr{
     margin-bottom: -2.232vw;
   }
 
+  .partners{
+    padding: 4vw !important;
+  }
+
+  .footer{
+    padding: 4vw !important;
+  }
+
 }
 
 @media only screen and (min-width: 576px) {

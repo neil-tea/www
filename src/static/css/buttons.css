@@ -439,22 +439,22 @@
     padding-top: 0.279vw;
     text-decoration: none;
     text-transform: uppercase;
-    width: 50vw;
-    height: 10vw;
+    width: 100%;
+    height: 14vw;
     transition: 0.2s ease-in-out;
   }
 
   .detail-btn-large:hover{
     background-color: #8000ff;
-    box-shadow: inset 0vw 0vw 0vw 1vw #1a1a1a !important;
+    box-shadow: inset 0vw 0vw 0vw 1.25vw #1a1a1a !important;
   }
 
    /* Icon Styling */
 
   .detail-btn-large .icon-enter-arrow{
     display: inline-block;
-    position: relaitve;
-    margin-right: 0.558vw;
+    position: relative;
+    margin-right: 2vw;
     transition: 0.2s ease-in-out;
   }
 
