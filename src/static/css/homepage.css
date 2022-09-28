@@ -297,12 +297,29 @@ hr{
     height:4vw;
   }
 
+  .impact-section{
+
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+
+  }
+
   .package-before-section{
     padding: 4vw !important;
   }
 
   .package_before{
 
+    padding-top: 20vw;
+    padding-bottom: 20vw;
+
   }
 
+}
+
+@media only screen and (min-width: 576px) {
+
+  #impact-break{
+    display:none;
+  }
 }
