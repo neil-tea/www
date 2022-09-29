@@ -573,4 +573,20 @@
     display:none;
   }
 
+  #m-gen-art-1{
+    width: 67vw;
+    height: 30vw;
+    margin-top: -9.5vw;
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+    display: block;
+    background-image: url("/Images/gen-art/glass-triangles.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+
+
+  }
+
 }
