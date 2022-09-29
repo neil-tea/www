@@ -585,8 +585,20 @@
     background-position: center;
     background-repeat: repeat;
     background-size: cover;
+  }
 
-
+  #m-gen-art-2{
+    width: 19vw;
+    height: 19.5vw;
+    margin-top: -49.5vw;
+    right: 7vw;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    background-image: url("/Images/gen-art/pixel-mouth.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
   }
 
 }
