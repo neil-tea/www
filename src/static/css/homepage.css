@@ -391,6 +391,10 @@ mark{
     padding-right:7vw !important;
   }
 
+  .package-cta-section{
+    padding: 4vw !important;
+  }
+
   .statistics{
     padding: 4vw !important;
   }
@@ -450,7 +454,7 @@ mark{
   .mobile-grid-element{
     width: 100%;
   }
-
+  
 }
 
 @media only screen and (min-width: 576px) {
