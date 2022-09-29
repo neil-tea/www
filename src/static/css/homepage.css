@@ -382,17 +382,19 @@ hr{
     position: relative;
     float:none !important;
     margin-top: 0px !important;
-    margin-bottom: 4vw !important;
+    margin-bottom: 0vw !important;
     z-index:2;
   }
 
   .stat-head{
     font-size: 3vw;
+    text-align: center;
   }
 
   .stat-number{
     font-family: "pp-neue-machina", sans-serif;
     font-size: 14vw;
+    text-align: center;
     margin-top: -2.232vw;
     margin-bottom: -2.232vw;
   }

@@ -434,7 +434,7 @@
     font-family: "pp-neue-machina", sans-serif;
     font-size: 3vw;
     background-color: #1a1a1a;
-    border: .5px solid #ffffff;
+    border: 1px solid #ffffff !important;
     color: #fff;
     padding-top: 0.279vw;
     text-decoration: none;
