@@ -42,20 +42,6 @@
     z-index:1;
   }
 
-  #gen-art-4{
-    background-image: url("/Images/gen-art/gen-art-_0012_DALL·E 2022-09-01 11.14.14 - a surrealist dream-like oil painting by Salvador Dalí of a tea cup melting i.jpg");
-    background-attachment: fixed;
-    background-position: left;
-    background-repeat: repeat;
-    background-size: contain;
-    position: absolute;
-    margin-top: 9.5vw;
-    right:  8.371vw;
-    width: 12.556vw;
-    height: 12.556vw;
-    z-index:1;
-  }
-
   #gen-art-5{
     position:absolute;
     width:24.275vw;
