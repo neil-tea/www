@@ -683,4 +683,18 @@
     background-size: cover;
   }
 
+  #m-gen-art-9{
+    width: 86vw;
+    height: 19vw;
+    right: 7vw;
+    margin-top: -19vw;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    background-image: url("/Images/gen-art/colorful-sandal.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
 }

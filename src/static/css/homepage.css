@@ -132,8 +132,8 @@ hr{
 }
 
 mark{
-  background-color: yellow !important;
-  color: black;
+  background-color: #00ffd0 !important;
+  color: #1a1a1a;
 }
 
 /* Homepage */
@@ -435,6 +435,8 @@ mark{
 
   #galaxy-eco-labs{
     width: 90% !important;
+    position: relative;
+    z-index: 1;
   }
 
   .footer{
