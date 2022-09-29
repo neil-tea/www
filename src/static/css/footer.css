@@ -364,7 +364,7 @@
   }
 
   .footer-content{
-    padding-right: 5.580vw;
+    padding-right: 2.3vw;
   }
 
   .email-btn{
@@ -391,6 +391,7 @@
 
   .footer-grid{
     width:100%;
+    display: none !important;
   }
 
 }
