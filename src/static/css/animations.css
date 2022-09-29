@@ -51,8 +51,8 @@
 /* Text Flicker Animation */
 
 
-h1,.gf-container{
-  animation: text-flicker 3s linear;
+h1, .hero-container{
+  animation: text-flicker 1.5s linear;
   transition: 0.2s ease-out;
 }
 
