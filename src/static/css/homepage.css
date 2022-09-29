@@ -235,6 +235,10 @@ hr{
     background-size: cover;
   }
 
+  .mobile-grid-element{
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -266,6 +270,10 @@ hr{
     margin-bottom: -2.232vw;
   }
 
+  .mobile-grid-element{
+    display: none;
+  }
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 992px) {
@@ -288,6 +296,10 @@ hr{
     font-size: 6.696vw;
     margin-top: -2.232vw;
     margin-bottom: -2.232vw;
+  }
+
+  .mobile-grid-element{
+    display: none;
   }
 
 }
@@ -319,6 +331,10 @@ hr{
     font-size: 6.696vw;
     margin-top: -2.232vw;
     margin-bottom: -2.232vw;
+  }
+
+  .mobile-grid-element{
+    display: none;
   }
 
 }
