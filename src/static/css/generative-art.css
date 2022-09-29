@@ -656,4 +656,31 @@
     background-size: cover;
   }
 
+  #m-gen-art-7{
+    width: 20vw;
+    height: 19vw;
+    left: 7vw;
+    margin-top: 9.5vw;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    background-image: url("/Images/gen-art/gen-art-_0021_DALL·E 2022-09-02 12.26.00 - crystals in polarized light under microscope.png.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
+  #m-gen-art-8{
+    width: 48vw;
+    height: 19vw;
+    right: 7vw;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    background-image: url("/Images/gen-art/gen-art-_0010_DALL·E 2022-09-01 10.48.33 - bright blue and green _It’s time we stop robbing Peter to pay Mark and Jeff._.jpg");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+  }
+
 }
