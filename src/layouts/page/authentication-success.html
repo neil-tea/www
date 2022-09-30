@@ -1,0 +1,68 @@
+{{ define "main" }}
+
+<div class="container email-subscribe-container">
+  <div class="row">
+    <div class="col my-auto">
+      <div class="email-div p-4" style="
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width:70%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);">
+        <div class="success-gif mb-3"></div>
+        <h1 class="display-4 text-center">Thanks for Authenticating!</h1>
+        <p class="lead text-center mb-5">You've just become an integral part in the future of the intenernet, AND you'll be entitled to a variety of exciting rewards such as minted NFT badges to honor your work thus far.</p>
+        <a class="btn btn-primary mb-3" href="https://tea.xyz"
+          role="button">Return to Main</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+  .email-subscribe-container{
+    height:100vh;
+    position: relative;
+    background-image: url("/Images/tea-steam-dark.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .btn-primary{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .success-gif{
+    width: 7vw;
+    height: 7vw;
+    border-radius: 100px;
+    background-image: url("/Images/auth-success.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  @media only screen and (max-width: 720px) {
+    .email-div{
+      width: 100% !important;
+    }
+
+    .success-gif{
+      width: 18vw;
+      height: 18vw;
+    }
+
+  }
+
+</style>
+
+{{ end }}
