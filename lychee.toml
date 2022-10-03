@@ -12,5 +12,6 @@ exclude = [
   ".*/mailto:.*@.*",
   "https://tea.xyz/tea.white-paper",
   "https://tea.xyz/tea.products",
-  "https://tea.xyz/tea.nebraska-man"
+  "https://tea.xyz/tea.nebraska-man",
+  "https://tea.xyz/tea.cli"
 ]
