@@ -11,4 +11,6 @@ exclude = [
   "https://www.googletagmanager.com/gtm.js",
   ".*/mailto:.*@.*",
   "https://tea.xyz/tea.white-paper",
+  "https://tea.xyz/tea.authentication-success",
+  "https://tea.xyz/tea.email-subscribe"
 ]
