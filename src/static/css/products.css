@@ -1,5 +1,19 @@
 @media only screen and (min-width: 1200px) {
 
+  .products-hero{
+    background-image: url("/Images/x-large-grid-hero.svg");
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: repeat;
+    background-size: contain;
+  }
+
+  .lead-container{
+    padding-left: 25vw;
+    padding-right: 20vw;
+    margin-bottom: -0.95vw;
+  }
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
