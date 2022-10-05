@@ -11,6 +11,19 @@
   z-index: 1;
 }
 
+#nb-gen-art-2{
+  position: absolute;
+  background-image: url("/Images/gen-art/glass-triangles.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 40.9vw;
+  height: 16.7vw;
+  left: 8.4vw; !important;
+  top: 12.5vw;
+  z-index: 1;
+}
+
 .nb-man-hero{
   background-image: url("/Images/x-large-grid-hero.svg");
   background-attachment: fixed;
