@@ -1,0 +1,38 @@
+.accordion-button{
+  font-family: "pp-neue-machina", sans-serif;
+  text-transform: uppercase;
+  height: 4.185vw;
+  border-radius: 0px !important;
+  background-color: #1a1a1a;
+  color: #ffffff;
+}
+
+.accordion-button:hover{
+  background-color: #4d4d4d;
+}
+
+.accordion-button:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed){
+  background-color: #8000ff;
+  color: #ffffff;
+}
+
+.accordion-body{
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-family: "sono", sans-serif;
+}
+
+.accordion-item{
+  border: none !important;
+}
+
+.accordion-button,
+.accordion-body{
+  padding-left: 8.185vw !important;
+  padding-right: 8.185vw !important;
+}
