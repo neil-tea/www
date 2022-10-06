@@ -60,3 +60,7 @@
 .nb-small-text-container{
   margin-top: 1vw !important;
 }
+
+.catalog-container{
+  border-bottom: 2px solid #949494;
+}
