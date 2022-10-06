@@ -4,11 +4,18 @@
   height: 4.185vw;
   border-radius: 0px !important;
   background-color: #1a1a1a;
+  border-top: 1px solid #949494;
+  border-bottom: 1px solid #949494;
   color: #ffffff;
 }
 
 .accordion-button:hover{
   background-color: #4d4d4d;
+}
+
+.accordion-button:active{
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .accordion-button:focus{
@@ -19,9 +26,11 @@
 .accordion-button:not(.collapsed){
   background-color: #8000ff;
   color: #ffffff;
+  border:none;
 }
 
 .accordion-body{
+  padding: 4.185vw 0vw;
   background-color: #1a1a1a;
   color: #ffffff;
   font-family: "sono", sans-serif;
