@@ -48,3 +48,15 @@
   z-index: 2;
   width: 30vw;
 }
+
+.comic-thumb{
+  width:100%;
+}
+
+.parallel-btn-container{
+  margin-bottom: 1.5vw;
+}
+
+.nb-small-text-container{
+  margin-top: 1vw !important;
+}
