@@ -29,6 +29,19 @@
   border:none;
 }
 
+.accordion-button:not(.collapsed)::after {
+    background-image: url(/Images/enter-icon.svg);
+    transform: rotate(90deg);
+}
+
+.accordion-button::after {
+    background-image: url(/Images/enter-icon.svg);
+    transform: rotate(0deg);
+    order:-1;
+    margin-left: 0;
+    margin-right: 1vw;
+}
+
 .accordion-body{
   padding: 4.185vw 0vw;
   background-color: #1a1a1a;
