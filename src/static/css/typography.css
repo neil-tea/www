@@ -93,7 +93,7 @@ li{
     margin-bottom: 2.232vw;
   }
 
-  p{
+  p,a{
     font-size: 1.116vw;
   }
 
@@ -134,7 +134,7 @@ li{
     margin-bottom: 2.232vw;
   }
 
-  p{
+  p,a{
     font-size: 1.667vw;
   }
 }
@@ -173,7 +173,7 @@ li{
     line-height: 3vw !important;
   }
 
-  p{
+  p,a{
     font-size: 2.016vw;
   }
 
@@ -209,7 +209,7 @@ li{
     margin-bottom: 40px;
   }
 
-  p{
+  p,a{
     font-size: 20px;
   }
 
@@ -242,7 +242,7 @@ li{
     line-height: 6vw !important;
   }
 
-  p{
+  p,a{
     font-size: 4vw;
   }
 
