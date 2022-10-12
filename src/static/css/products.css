@@ -35,6 +35,10 @@
 
 @media only screen and (max-width: 576px) {
 
+  .product-container{
+    padding: 7vw !important;
+  }
+
 }
 
 /* Generative Art styling */
