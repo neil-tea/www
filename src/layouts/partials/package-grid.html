@@ -13,30 +13,32 @@
     <!-- Start Package Grid -->
 
     <div class="row package-row black-bg g-0">
-      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-      </div>
-      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-      </div>
-      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-      </div>
-      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
+      <div class="package-grid">
+        {{ range $.Site.Data.mockPackages }}
+          {{- partial "package-thumbnail.html" .}}
+        {{ end }}
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .package-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  @media only screen and (min-width: 576px) {
+    .package-grid {
+      /* changes to 3 column thumbs */
+      grid-template-columns: auto auto auto;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .package-grid {
+      /* changes to 4 column thumbs */
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+</style>

@@ -22,3 +22,5 @@ hugo.linux
 node_modules
 .envrc
 cdk.out
+
+.ideas
