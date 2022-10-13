@@ -11,7 +11,7 @@
 }
 
 h1,h2,h3,h4,h5,h6,p,.lead{
-  hyphens: auto;
+  hyphens: auto !important;
 }
 
 h1{
@@ -218,7 +218,7 @@ li{
 @media only screen and (max-width: 576px) {
 
   h1{
-    font-size: 21.5vw !important;
+    font-size: 21.5vw;
     line-height: 20.4vw !important;
   }
 
@@ -244,6 +244,16 @@ li{
 
   p{
     font-size: 4vw;
+  }
+
+  a.nav-link.footer-link.small{
+    font-size: 3vw;
+    padding-left: 0px !important;
+    padding-right: 2.232vw !important;
+  }
+
+  ul.nav.justify-content-end{
+    justify-content: flex-start !important;
   }
 
 }
