@@ -93,7 +93,7 @@ li{
     margin-bottom: 2.232vw;
   }
 
-  p,a{
+  p{
     font-size: 1.116vw;
   }
 
@@ -134,7 +134,7 @@ li{
     margin-bottom: 2.232vw;
   }
 
-  p,a{
+  p{
     font-size: 1.667vw;
   }
 }
@@ -173,7 +173,7 @@ li{
     line-height: 3vw !important;
   }
 
-  p,a{
+  p{
     font-size: 2.016vw;
   }
 
@@ -209,7 +209,7 @@ li{
     margin-bottom: 40px;
   }
 
-  p,a{
+  p{
     font-size: 20px;
   }
 
@@ -242,8 +242,18 @@ li{
     line-height: 6vw !important;
   }
 
-  p,a{
+  p{
     font-size: 4vw;
+  }
+
+  a.nav-link.footer-link.small{
+    font-size: 3vw;
+    padding-left: 0px !important;
+    padding-right: 2.232vw !important;
+  }
+
+  ul.nav.justify-content-end{
+    justify-content: flex-start !important;
   }
 
 }
