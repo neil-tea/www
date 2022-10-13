@@ -56,6 +56,21 @@
     z-index:1;
   }
 
+  #gen-art-4_5{
+    background-image: url("/Images/gen-art/floating-city.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+    position: absolute;
+    margin-top: 12vw;
+    border-radius: 100px;
+    right: 12.4vw;
+    width: 8vw;
+    height: 8vw;
+    z-index:2;
+  }
+
   #gen-art-5{
     position:absolute;
     width:24.275vw;
