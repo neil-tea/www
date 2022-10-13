@@ -42,6 +42,20 @@
     z-index:1;
   }
 
+  #gen-art-4{
+    background-image: url("/Images/gen-art/abstract-pattern.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    margin-top: 16.5vw;
+    right: 8.4vw;
+    width: 18vw;
+    height: 28vw;
+    z-index:1;
+  }
+
   #gen-art-5{
     position:absolute;
     width:24.275vw;
