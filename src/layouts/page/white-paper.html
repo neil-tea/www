@@ -1,10 +1,15 @@
 {{ define "main" }}
 
 <!-- Hero Section -->
-
-
+<div class="section">
+  <div class="container">
     <div class="row">
-      <hr>
+      <div class="col">
+        <h1>White Paper</h1>
+        <p>Open‐source is about the many coming together to create something great. In the spirit of that, we’re inviting developers, speculators, and enthusiasts alike to contribute to our white paper and help brew the future of the internet. This is our revolutionary undertaking to create equitable open‐source for web3, and we want you to be a part of laying its groundwork.</p>
+      </div>
+    </div>
+    <div class="row">
         <div class="col mb-4 mt-3">
           <h4>Our white paper is available in multiple languages</h4>
           <p>Thanks to the tea community's generosity and time, our white paper is available in several world languages. Select your preferred language from the dropdown menu.</p>
@@ -16,7 +21,10 @@
           </div>
         </div>
       </div>
-    </div>
+  </div>
+</div>
+
+{{- partial "full-width-cta-split.html" -}}
 
     <script>
       const versions = [
