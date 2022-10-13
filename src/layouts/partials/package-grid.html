@@ -14,7 +14,7 @@
 
     <div class="row package-row black-bg g-0">
       <div class="package-grid">
-        {{ range $.Site.Data.mockPackages }}
+        {{ range $.Site.Data.packages }}
           {{- partial "package-thumbnail.html" .}}
         {{ end }}
       </div>

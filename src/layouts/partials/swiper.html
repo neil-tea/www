@@ -11,7 +11,7 @@
     <div class="col">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          {{ range $.Site.Data.mockPackages }}
+          {{ range $.Site.Data.packages }}
             <div class="swiper-slide">
             {{- partial "package-thumbnail.html" .}}
             </div>

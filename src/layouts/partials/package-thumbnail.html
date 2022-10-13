@@ -4,21 +4,25 @@
     <article class="card-thumb-label">
       <img src="/Images/tea-logo-no-bg.svg" width="26" alt="tea"/>
       <h3>{{- .name -}}</h3>
-      <h4>&#x2022;&nbsp;{{- .maintainer -}}</h4>
+      {{ if not (eq .maintainer "") }}
+        <h4>&#x2022;&nbsp;{{- .maintainer -}}</h4>
+      {{end}}
     </article>
   </figure>
   <div class="card-body thumbnail-body">
     <div class="card-text-container">
       <p class="card-text">
-        <span class="package-version-no">{{- .version -}}</span>
+        <span class="package-version-no">V&NonBreakingSpace;{{- .version -}}</span>
+        <!-- 
+        TODO: uncomment once install counts are not disappointing anymore  
         <br>
-        <span class="package-install-no">>{{- .installs -}}&nbsp;installs</span>
+        <span class="package-install-no">>{{- .installs -}}&nbsp;installs</span> -->
       </p>
     </div>
     {{- partial "detail-btn.html" . -}}
   </div>
   <div class="card-body thumbnail-body-mobile">
-    <a href="/packages/{{- .slug -}}">
+    <a href="/packages/{{- .name -}}">
       <button class="detail-btn-mobile"><i class="icon-enter-arrow"></i>details</button>
     </a>
   </div>
@@ -64,6 +68,7 @@
   }
 
   .thumbnail-body{
+    display: flex;
     border-radius: 0px !important;
     padding: 0vw;
   }
