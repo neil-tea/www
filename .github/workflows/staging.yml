@@ -33,6 +33,9 @@ jobs:
         echo "relativeurls = true" >>config.toml
       working-directory: src
 
+    # TODO:
+    # add action here to download updates packages.json into src/data/packages.json
+
     - run: .github/mk-pantry-accessible.sh ${{ secrets.TEMP_JACOBS_GITHUB_PAT }}
     - uses: teaxyz/setup@v0
       with:
