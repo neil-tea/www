@@ -24,3 +24,6 @@ node_modules
 cdk.out
 
 .ideas
+
+# initially committed _sample.md only the rest will be ignored
+src/content/packages/*
