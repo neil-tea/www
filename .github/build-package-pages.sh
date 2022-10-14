@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # cmd: $ ./build-package-pages.sh srcJson targetPath
 # sample:  $ .github/build-package-pages.sh src/data/packages.json src/content/packages'
 
