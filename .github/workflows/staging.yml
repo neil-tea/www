@@ -41,7 +41,7 @@ jobs:
       id: version
       with:
         cmd: '.github/build-package-pages.sh src/data/packages.json src/content/packages'
-    - run: ls src/content/packages
+
     - run: .github/mk-pantry-accessible.sh ${{ secrets.TEMP_JACOBS_GITHUB_PAT }}
     - uses: teaxyz/setup@v0
       with:
