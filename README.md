@@ -16,6 +16,11 @@ The tea logo and wordmark are registered trademarks of tea.inc.
 * Repeated components are in [`./src/layouts/partials/`].
 
 ## Getting Started
+Just once assuming there are no updates in `/src/data/packages.json`. This will create the package detail pages.
+```sh
+.github/build-package-pages.sh src/data/packages.json src/content/packages
+```
+
 
 hugo can render your edits while you work:
 
@@ -30,7 +35,6 @@ Install hugo yourself or use tea: `sh <(curl tea.xyz) hugo`.
 | Project    | Version |
 |------------|---------|
 | gohugo.io  |  >=0.99 |
-
 
 # Build
 

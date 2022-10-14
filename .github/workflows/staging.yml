@@ -33,7 +33,17 @@ jobs:
         echo "relativeurls = true" >>config.toml
       working-directory: src
 
+    # TODO:
+    # add action here to download updates packages.json into src/data/packages.json
+
+    - name: Create Package Detail Pages from packages.json
+      uses: getneil/jq-action@v1
+      id: version
+      with:
+        cmd: '.github/build-package-pages.sh src/data/packages.json src/content/packages'
+
     - run: .github/mk-pantry-accessible.sh ${{ secrets.TEMP_JACOBS_GITHUB_PAT }}
+
     - uses: teaxyz/setup@v0
       with:
         target: build

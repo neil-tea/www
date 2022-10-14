@@ -1,0 +1,122 @@
+[
+    {
+        "name": "mpdecimal",
+        "full_name": "mpdecimal",
+        "desc": "Library for decimal floating point arithmetic",
+        "homepage": "https://www.bytereef.org/mpdecimal/",
+        "version": "2.5.1",
+        "installs": 3986221,
+        "maintainer": "",
+        "thumb_image_url": "/Images/package-thumb-nolabel.jpg"
+    },
+    {
+        "name": "svg2png",
+        "full_name": "svg2png",
+        "desc": "SVG to PNG converter",
+        "homepage": "https://cairographics.org/",
+        "version": "0.1.3",
+        "installs": 1233,
+        "maintainer": "pascal",
+        "thumb_image_url": "/Images/package-thumb-nolabel4.jpg"
+    },
+    {
+        "name": "cmake",
+        "full_name": "cmake",
+        "desc": "Cross-platform make",
+        "homepage": "https://www.cmake.org/",
+        "version": "3.24.2",
+        "installs": 1729267,
+        "maintainer": "pascal",
+        "thumb_image_url": "/Images/package-thumb-nolabel3.jpg"
+    },
+    {
+        "name": "h2c",
+        "full_name": "h2c",
+        "desc": "Headers 2 curl",
+        "homepage": "https://curl.se/h2c/",
+        "version": "1.0",
+        "installs": 96,
+        "maintainer": "h2o",
+        "thumb_image_url": "/Images/package-thumb-nolabel.jpg"
+    },
+    {
+        "name": "libmagic",
+        "full_name": "libmagic",
+        "desc": "Implementation of the file(1) command",
+        "homepage": "https://www.darwinsys.com/file/",
+        "version": "5.43",
+        "installs": 162436,
+        "maintainer": "",
+        "thumb_image_url": "/Images/package-thumb-nolabel3.jpg"
+    },
+    {
+        "name": "deno",
+        "full_name": "deno",
+        "desc": "Secure runtime for JavaScript and TypeScript",
+        "homepage": "https://deno.land/",
+        "version": "1.26.1",
+        "installs": 204033,
+        "maintainer": "Ryan Dahl",
+        "thumb_image_url": "/Images/package-thumb-nolabel2.jpg"
+    },
+    {
+        "name": "fontconfig",
+        "full_name": "fontconfig",
+        "desc": "XML-based font configuration API for X Windows",
+        "homepage": "https://wiki.freedesktop.org/www/Software/fontconfig/",
+        "version": "2.14.0",
+        "installs": 2485083,
+        "maintainer": "Max Miedinger",
+        "thumb_image_url": "/Images/package-thumb-nolabel.jpg"
+    },
+    {
+        "name": "pkg-config",
+        "full_name": "pkg-config",
+        "desc": "Manage compile and link flags for libraries",
+        "homepage": "https://freedesktop.org/wiki/Software/pkg-config/",
+        "version": "0.29.2",
+        "installs": 2634164,
+        "maintainer": "pascal",
+        "thumb_image_url": "/Images/package-thumb-nolabel4.jpg"
+    },
+    {
+        "name": "shared-mime-info",
+        "full_name": "shared-mime-info",
+        "desc": "Database of common MIME types",
+        "homepage": "https://wiki.freedesktop.org/www/Software/shared-mime-info",
+        "version": "2.2",
+        "installs": 642619,
+        "maintainer": "Mr.Mime",
+        "thumb_image_url": "/Images/package-thumb-nolabel3.jpg"
+    },
+    {
+        "name": "ttfautohint",
+        "full_name": "ttfautohint",
+        "desc": "Auto-hinter for TrueType fonts",
+        "homepage": "https://www.freetype.org/ttfautohint/",
+        "version": "1.8.4",
+        "installs": 4696,
+        "maintainer": "pascal",
+        "thumb_image_url": "/Images/package-thumb-nolabel.jpg"
+    },
+    {
+        "name": "numactl",
+        "full_name": "numactl",
+        "desc": "NUMA support for Linux",
+        "homepage": "https://github.com/numactl/numactl",
+        "version": "2.0.16",
+        "installs": 1120,
+        "maintainer": "FSS",
+        "thumb_image_url": "/Images/package-thumb-nolabel2.jpg"
+    },
+    {
+        "name": "flex",
+        "full_name": "flex",
+        "desc": "Fast Lexical Analyzer, generates Scanners (tokenizers)",
+        "homepage": "https://github.com/westes/flex",
+        "version": "2.6.4",
+        "installs": 35001,
+        "maintainer": "",
+        "thumb_image_url": "/Images/package-thumb-nolabel4.jpg"
+    }
+]
