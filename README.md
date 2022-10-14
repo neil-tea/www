@@ -36,13 +36,11 @@ Install hugo yourself or use tea: `sh <(curl tea.xyz) hugo`.
 |------------|---------|
 | gohugo.io  |  >=0.99 |
 
-
 # Build
 
 Builds a static, deployable version of the website.
 
 ```sh
-.github/build-package-pages.sh src/data/packages.json src/content/packages
 hugo --source src --destination ../public --minify
 ```
 

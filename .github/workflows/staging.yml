@@ -40,7 +40,7 @@ jobs:
       uses: getneil/jq-action@v1
       id: version
       with:
-        cmd: './scripts/build-package-pages.sh src/data/packages.json src/content/packages'
+        cmd: '.github/build-package-pages.sh src/data/packages.json src/content/packages'
 
     - run: .github/mk-pantry-accessible.sh ${{ secrets.TEMP_JACOBS_GITHUB_PAT }}
 
