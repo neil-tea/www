@@ -80,15 +80,15 @@ jobs:
     #   working-directory: .cdk
   
     - uses: borales/actions-yarn@v3.0.0
+      working-directory: ./lambdas
       with:
         cmd: install
-        working-directory: lambdas
 
     - name: deploy
+      working-directory: ./lambdas
       uses: Teakowa/serverless-action@master
       with:
         args: --stage prod deploy
-        working-directory: lambdas
   
     # - name: Seal Deployment
     #   uses: bobheadxi/deployments@v1
