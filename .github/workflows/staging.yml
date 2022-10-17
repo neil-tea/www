@@ -22,7 +22,7 @@ jobs:
   
     - uses: borales/actions-yarn@v3.0.0
       with:
-        cmd: --cwd lambdas install
+        cmd: --cwd ./lambdas install
   
     - name: serverless deploy
       uses: serverless/github-action@v3
