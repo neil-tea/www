@@ -10,9 +10,6 @@ env:
 jobs:
   deploy_sls:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./lambdas
     steps:
     - uses: aws-actions/configure-aws-credentials@v1
       with:
