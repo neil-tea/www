@@ -25,7 +25,6 @@ jobs:
         cmd: install
 
     - name: deploy
-      working-directory: ./lambdas
       uses: Teakowa/serverless-action@master
       with:
         args: --stage prod deploy
