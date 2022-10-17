@@ -22,12 +22,13 @@ jobs:
   
     - uses: borales/actions-yarn@v3.0.0
       with:
-        cmd: install
-
-    - name: deploy
-      uses: Teakowa/serverless-action@master
+        cmd: --cwd lambdas install
+  
+    - name: serverless deploy
+      uses: serverless/github-action@v3
       with:
-        args: --stage prod deploy
+        args: -c "cd ./lambdas && serverless deploy"
+        entrypoint: /bin/sh
 
   # deploy:
   #   runs-on: ubuntu-latest
