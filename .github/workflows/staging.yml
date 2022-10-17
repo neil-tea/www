@@ -78,7 +78,17 @@ jobs:
       id: cdk_deploy
       run: yarn deploy
       working-directory: .cdk
+  
+    - uses: borales/actions-yarn@v3.0.0
+      with:
+        cmd: install
+        working-directory: lambdas
 
+    - name: deploy
+      uses: Teakowa/serverless-action@master
+      with:
+        args: --stage prod deploy
+  
     - name: Seal Deployment
       uses: bobheadxi/deployments@v1
       if: always()
