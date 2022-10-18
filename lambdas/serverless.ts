@@ -16,9 +16,23 @@ const serverlessConfiguration: AWS = {
     environment: {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
       NODE_OPTIONS: '--enable-source-maps --stack-trace-limit=1000',
+      AWS_DIST_BUCKET: '',
     },
     iam: {
-      deploymentRole: `arn:aws:iam::${process.env.AWS_ACCOUNT_ID || '640264234305'}:role/CloudFormationExecutionRole`
+      deploymentRole: `arn:aws:iam::${process.env.AWS_ACCOUNT_ID || '640264234305'}:role/CloudFormationExecutionRole`,
+      role: {
+        statements: [
+          {
+            "Effect": "Allow",
+            "Resource": `arn:aws:s3:::mockdist.tea.xyz`,
+            "Action": [
+                "s3:Get*",
+                "s3:List*",
+                "s3:PutObject"
+            ]
+          }
+        ]
+      }
     }
   },
   // import the function via paths
