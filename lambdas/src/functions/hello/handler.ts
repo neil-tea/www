@@ -19,6 +19,7 @@ const hello: ValidatedEventAPIGatewayProxyEvent<typeof schema> = async (event) =
 
 const writeData = async () => {
   try {
+    console.log("uploading!")
 
     const obj = {
         firstname: "Navjot",
@@ -37,6 +38,7 @@ const writeData = async () => {
     };
   
     await s3.upload(data);
+    console.log("uploaded!")
   } catch (error) {
     console.error(error);
   }
