@@ -33,8 +33,7 @@ const writeData = async () => {
         Key: 'packages.json',
         Body: buf,
         ContentEncoding: 'base64',
-        ContentType: 'application/json',
-        ACL: 'public-read'
+        ContentType: 'application/json'
     };
   
     await s3.putObject(data).promise();
