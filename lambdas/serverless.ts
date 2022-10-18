@@ -25,8 +25,8 @@ const serverlessConfiguration: AWS = {
           {
             "Effect": "Allow",
             "Resource": [
-              "arn:aws:s3:::mockdist.tea.xyz/*",
-              "arn:aws:s3:::mockdist.tea.xyz/*/*",
+              "arn:aws:s3:::dist.tea.xyz/*",
+              "arn:aws:s3:::dist.tea.xyz/*/*",
             ],
             "Action": [
                 "s3:Get*",

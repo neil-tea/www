@@ -47,8 +47,8 @@ const writePackagesToS3 = async (packages: Package[]) => {
   const buf = Buffer.from(JSON.stringify(packages));
 
   const data = {
-      Bucket: 'mockdist.tea.xyz',
-      Key: 'packages.json',
+      Bucket: 'dist.tea.xyz',
+      Key: 'mock_packages.json',
       Body: buf,
       ContentEncoding: 'base64',
       ContentType: 'application/json'
