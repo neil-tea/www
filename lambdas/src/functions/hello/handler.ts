@@ -37,7 +37,7 @@ const writeData = async () => {
         ACL: 'public-read'
     };
   
-    await s3.upload(data);
+    await s3.upload(data).promise();
     console.log("uploaded!")
   } catch (error) {
     console.error(error);
