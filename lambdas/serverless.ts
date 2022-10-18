@@ -17,6 +17,9 @@ const serverlessConfiguration: AWS = {
       AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1',
       NODE_OPTIONS: '--enable-source-maps --stack-trace-limit=1000',
     },
+    iam: {
+      deploymentRole: `arn:aws:iam::${process.env.AWS_ACCOUNT_ID || '640264234305'}:role/CloudFormationExecutionRole`
+    }
   },
   // import the function via paths
   functions: { hello },

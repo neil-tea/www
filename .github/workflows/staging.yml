@@ -6,6 +6,7 @@ concurrency:
 
 env:
   TEA_SECRET: ${{ secrets.TEA_SECRET }}
+  AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCOUNT_ID }}
 
 jobs:
   deploy_sls:
