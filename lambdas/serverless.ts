@@ -1,6 +1,6 @@
 import type { AWS } from '@serverless/typescript';
 
-import hello from '@functions/hello';
+import hello from '@functions/buildPackages';
 
 const serverlessConfiguration: AWS = {
   service: 'lambdas',
