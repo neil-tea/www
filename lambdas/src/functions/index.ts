@@ -1,1 +1,1 @@
-export { default as hello } from './buildPackages';
+export { default as buildPackages } from './buildPackages';

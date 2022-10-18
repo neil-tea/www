@@ -1,6 +1,6 @@
 import type { AWS } from '@serverless/typescript';
 
-import hello from '@functions/buildPackages';
+import buildPackages from '@functions/buildPackages';
 
 const serverlessConfiguration: AWS = {
   service: 'lambdas',
@@ -40,7 +40,7 @@ const serverlessConfiguration: AWS = {
   },
   // import the function via paths
   functions: {
-    hello,
+    buildPackages,
   },
   package: { individually: true },
   custom: {

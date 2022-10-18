@@ -10,14 +10,14 @@ const  s3 = new S3();
 const buildPackages = async (event) => {
   try {
     const {data} = await axios.get('https://mocki.io/v1/e289a4b4-3199-49f8-80a4-fcec70c74fdf');
-    await writePackagesData(data);
+    await writePackagesData(data as Package[]);
   } catch (error) {
     console.error(error);
   }
 };
 
 
-const writePackagesData = async (packages: any[]) => {
+const writePackagesData = async (packages: Package[]) => {
   console.log("uploading!")
 
   const buf = Buffer.from(JSON.stringify(packages));
@@ -34,4 +34,4 @@ const writePackagesData = async (packages: any[]) => {
   console.log("uploaded!")
 }
 
-export const main = middyfy(buildPackages);
+export const main = buildPackages;
