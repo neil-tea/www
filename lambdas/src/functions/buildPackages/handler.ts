@@ -4,9 +4,15 @@ import axios from 'axios';
 import { compareVersions, validate } from 'compare-versions';
 
 import S3 from 'aws-sdk/clients/s3';
+import { base } from 'airtable';
+
+// const atApiKey = 'keyKqvmHrsakIfqWg'; // set this to AIRTABLE_API_KEY env var
+
 const  s3 = new S3();
 
-const Bucket = 'dist.tea.xyz';
+const airtablePackagesBase = base(process.env.AIRTABLE_PACKAGES_BASE);
+
+const Bucket = process.env.AWS_DIST_BUCKET;
 
 interface S3Package {
   slug: string,
@@ -16,9 +22,14 @@ interface S3Package {
   maintainer: string,
   homepage: string,
   // key: string,
-  last_modified: Date,
+  last_modified: Date | string,
 }
 
+type AirtablePackage = S3Package & {
+  airtable_record_id: string,
+  thumb_image_url: string,
+  description: string,
+}
 
 const buildPackages = async () => {
   try {
@@ -46,8 +57,14 @@ const buildPackages = async () => {
      *        // Yup, dont included to packages to be displayed in site
      *        insertToAirtable();
      */
-    const allS3Packages = await getAllS3Packages();
-    console.log(allS3Packages);
+    const [
+      allS3Packages,
+      airtablePackages
+    ] = await Promise.all([
+      getAllS3Packages(),
+      getAllAirtablePackages(),
+    ]);
+
   } catch (error) {
     console.error(error);
   }
@@ -115,7 +132,7 @@ const getPossibleHomepage = (name: string) => {
   return name && name.split('.').length > 1 ? `https://${name}` : ''
 }
 
-const writePackagesToS3 = async (packages: Package[]) => {
+const writePackagesToS3 = async (packages: S3Package[]) => {
   console.log("uploading!")
 
   const buf = Buffer.from(JSON.stringify(packages));
@@ -130,6 +147,60 @@ const writePackagesToS3 = async (packages: Package[]) => {
 
   await s3.putObject(data).promise();
   console.log("uploaded!")
+}
+
+const getAllAirtablePackages = async () : Promise<AirtablePackage[]> => {
+  const allRecords = await airtablePackagesBase('packages')
+    .select({
+      maxRecords: 100,
+      view: '_api'
+    }).all();
+  
+  const packages: AirtablePackage[] = allRecords.map((record) => {
+    return {
+      airtable_record_id: record.id,
+      ..._.pick(record.fields, [
+        'slug',
+        'homepage',
+        'maintainer',
+        'name',
+        'version',
+        'last_modified',
+        'full_name',
+      ]),
+      description: record.fields?.description || '',
+      thumb_image_url: _.get(record.fields, 'thumb_image[0].url', '/Images/package-thumb-nolabel3.jpg')
+    } as AirtablePackage;
+  });
+  /**
+   * // SAMPLE RECORD SHAPE w/ thumb_image is uploaded
+    {
+      slug: 'unicode_org',
+      name: 'unicode.org',
+      full_name: 'unicode.org',
+      homepage: 'https://unicode.org',
+      version: '71.1.1',
+      last_modified: '2022-09-26T19:46:25.000Z',
+      thumb_image: [
+        {
+          id: 'attQVgaRUXOYinsWy',
+          width: 640,
+          height: 534,
+          url: 'https://dl.airtable.com/.attachments/f2465c36a0060919368e2f53305694f9/cfab76a8/gen-art-1.png',
+          filename: 'gen-art-1.png',
+          size: 184878,
+          type: 'image/png',
+          thumbnails: [Object]
+        }
+      ]
+    }
+  TODO IMAGE UPLOAD to S3/CDN:
+    if thumb_image_url is empty
+      get thumb_image data
+      upload to s3
+      update thumb_image_url in airtable
+   */
+  return packages;
 }
 
 export const main = buildPackages;

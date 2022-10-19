@@ -4,4 +4,9 @@ import { handlerPath } from '@libs/handler-resolver';
 export default {
   handler: `${handlerPath(__dirname)}/handler.main`,
   events: [],
+  environment: {
+    AIRTABLE_API_KEY: '${ssm:/airtable/api_key}',
+    AIRTABLE_PACKAGES_BASE: '${ssm:/airtable/packages_base}',
+    AWS_DIST_BUCKET: '${ssm:AW5_S3_BUCKET}'
+  }
 };
