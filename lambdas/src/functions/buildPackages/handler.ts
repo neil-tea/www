@@ -1,10 +1,22 @@
-import { middyfy } from '@libs/lambda';
-
 import type { Package } from '@libs/types';
+import _ from 'lodash';
 import axios from 'axios';
+import { compareVersions, validate } from 'compare-versions';
 
 import S3 from 'aws-sdk/clients/s3';
 const  s3 = new S3();
+
+const Bucket = 'dist.tea.xyz';
+
+interface S3Package {
+  version: string,
+  full_name: string,
+  name: string,
+  maintainer: string,
+  homepage: string,
+  // key: string,
+  last_modified: Date,
+}
 
 
 const buildPackages = async () => {
@@ -33,13 +45,71 @@ const buildPackages = async () => {
      *        // Yup, dont included to packages to be displayed in site
      *        insertToAirtable();
      */
-    const {data} = await axios.get('https://mocki.io/v1/e289a4b4-3199-49f8-80a4-fcec70c74fdf');
-    await writePackagesToS3(data as Package[]);
+    const allS3Packages = await getAllS3Packages();
+    console.log(allS3Packages);
   } catch (error) {
     console.error(error);
   }
 };
 
+
+const getAllS3Packages = async (): Promise<S3Package[]>  => {
+  const allS3PackagesWithDups = await getKeysFromS3();
+
+  const sortedByVersion = allS3PackagesWithDups
+    .sort((a, b) => compareVersions(a.version, b.version))
+    .reverse();
+
+  const uniquePackages = _(sortedByVersion)
+    .uniqBy('name')
+    .value();
+
+  return uniquePackages;
+}
+
+const getKeysFromS3 = async (ContinuationToken?: string) : Promise<S3Package[]> => {
+  const res = await s3.listObjectsV2({
+    Bucket,
+    MaxKeys: 2147483647,
+    ...(ContinuationToken ? { ContinuationToken } : {}),
+  }).promise();
+
+  const s3Packages: S3Package[] = res.Contents
+    .filter((data: S3.Object) => data.Key.split('/').length >= 2)
+    .map(convertS3ContentTOS3Package);
+
+  if (res.IsTruncated && res.NextContinuationToken) {
+    const nextPackages = await getKeysFromS3(res.NextContinuationToken);
+    s3Packages.push(...nextPackages);
+  }
+
+  return s3Packages.filter((p) => validate(p.version));
+}
+
+const convertS3ContentTOS3Package = (data: S3.Object) : S3Package => {
+  const pathElements = data.Key.replace('github.com/', '').split('/');
+  const [rawVersion] = pathElements.pop().split('.tar');
+  const version = rawVersion.replace('v', '')
+    .replace('.sha256sum','')
+    .replace('ersions.txt', '');
+
+  const [maintainerOrPackageName, packageName] = pathElements;
+  const isMaintainer = !packageName ? false :
+    !['linux','darwin'].includes(packageName);
+
+  return {
+    name: isMaintainer ? packageName : maintainerOrPackageName,
+    full_name: isMaintainer ? [maintainerOrPackageName, packageName].join('/') : '',
+    maintainer: isMaintainer ? maintainerOrPackageName : '',
+    version,
+    last_modified: data.LastModified,
+    homepage: getPossibleHomepage(maintainerOrPackageName) || getPossibleHomepage(packageName) || '' 
+  }
+}
+
+const getPossibleHomepage = (name: string) => {
+  return name && name.split('.').length > 1 ? `https://${name}` : ''
+}
 
 const writePackagesToS3 = async (packages: Package[]) => {
   console.log("uploading!")
