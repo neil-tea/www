@@ -9,6 +9,7 @@ const  s3 = new S3();
 const Bucket = 'dist.tea.xyz';
 
 interface S3Package {
+  slug: string,
   version: string,
   full_name: string,
   name: string,
@@ -97,9 +98,12 @@ const convertS3ContentTOS3Package = (data: S3.Object) : S3Package => {
   const isMaintainer = !packageName ? false :
     !['linux','darwin'].includes(packageName);
 
+  const fullName = isMaintainer ? [maintainerOrPackageName, packageName].join('/') : maintainerOrPackageName;
+
   return {
+    slug: fullName.replace(/[^\w\s]/gi, '_').toLocaleLowerCase(),
     name: isMaintainer ? packageName : maintainerOrPackageName,
-    full_name: isMaintainer ? [maintainerOrPackageName, packageName].join('/') : '',
+    full_name: fullName,
     maintainer: isMaintainer ? maintainerOrPackageName : '',
     version,
     last_modified: data.LastModified,
