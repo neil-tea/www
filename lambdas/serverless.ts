@@ -25,12 +25,13 @@ const serverlessConfiguration: AWS = {
           {
             "Effect": "Allow",
             "Resource": [
+              "arn:aws:s3:::dist.tea.xyz",
               "arn:aws:s3:::dist.tea.xyz/*",
               "arn:aws:s3:::dist.tea.xyz/*/*",
             ],
             "Action": [
-                "s3:Get*",
-                "s3:List*",
+                "s3:GetBucketAcl",
+                "s3:List",
                 "s3:ListBucket",
                 "s3:PutObject"
             ]
