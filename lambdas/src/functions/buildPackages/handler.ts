@@ -2,7 +2,8 @@ import type { Package, AirtablePackage, S3Package } from '@libs/types';
 import _ from 'lodash';
 
 import { getAllS3Packages, writePackagesToS3 } from '@libs/dist_tea_xyz';
-import { getAllAirtablePackages } from '@libs/airtable';
+import { getAllAirtablePackages, insertPackagesToAirtable } from '@libs/airtable';
+import { getBestMatchingIndexedPackage } from '@libs/algolia';
 
 type NewAirtablePackage = Partial<AirtablePackage>;
 
@@ -22,7 +23,10 @@ const buildPackages = async () => {
       packagesJson,
     } = await getFinalPackagesData(allS3Packages, airtablePackages);
 
-    await writePackagesToS3(packagesJson);
+    await Promise.all([
+      insertPackagesToAirtable(newPackages),
+      writePackagesToS3(packagesJson),
+    ]);
   } catch (error) {
     console.error(error);
   }
@@ -57,17 +61,21 @@ const getFinalPackagesData = async (s3Packages: S3Package[], airtablePackages: A
       }
       packagesJson.push(finalPackage);
     } else {
+      const matchingIndexedPackage = await getBestMatchingIndexedPackage(s3Package.full_name);
+      const desc = matchingIndexedPackage ? matchingIndexedPackage.desc : '';
+      const homepage = s3Package.homepage ||  _.get(matchingIndexedPackage, 'homepage', '');
+      
       const newPackage: NewAirtablePackage = {
         ...s3Package,
-        // TODO:
-        desc: '', // get this from algolia
-        homepage: s3Package.homepage || '', // get from algolia
+        desc,
+        homepage,
       }
       const tempPackage: Package = {
         ...s3Package,
+        homepage,
+        desc,
+        installs: 0, // TODO: get from algolia
         thumb_image_url: '',
-        desc: '',
-        installs: 0,
       }
       newPackages.push(newPackage);
       packagesJson.push(tempPackage);

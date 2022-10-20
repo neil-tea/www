@@ -19,3 +19,8 @@ export type Package = Omit<AirtablePackage, 'airtable_record_id'> & {
   airtable_record_id?: string,
   installs: number,
 }
+
+export type AlgoliaIndexedPackage = Omit<S3Package, 'slug | maintainer | last_modified'> & {
+  objectID: string;
+  desc: string;
+}

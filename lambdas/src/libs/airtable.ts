@@ -1,4 +1,4 @@
-import { base } from 'airtable';
+import { base, FieldSet } from 'airtable';
 import _ from 'lodash';
 import type { AirtablePackage } from './types';
 
@@ -59,4 +59,32 @@ export const getAllAirtablePackages = async (): Promise<AirtablePackage[]> => {
       update thumb_image_url in airtable
       */
   return packages;
+}
+
+type NewPackageRecord = {
+  fields: Partial<FieldSet>
+}
+
+export const insertPackagesToAirtable = async (newPackages: Partial<AirtablePackage>[]) => {
+  console.log(`airtable: inserting new packages(${newPackages.length})`);
+  try {
+    const newRecords: NewPackageRecord[] = newPackages.map((fields) => {
+      return {
+        fields: {
+          ...fields,
+          last_modified: fields.last_modified.toString(),
+        }
+      }
+    });
+
+    // airtable can only insert 10 at a time
+    const insertBatches = _.chunk(newRecords, 10);
+    for(const batch of insertBatches) {
+      await airtablePackagesBase('packages').create(batch);
+    }
+    console.info(`airtable: new packages(${newPackages.length}) inserted`)
+  } catch (error) {
+    console.error(error);
+    console.log(`airtable: failed to insert packages(${newPackages.length})!`);
+  }
 }
