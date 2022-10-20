@@ -1,6 +1,6 @@
 import S3 from 'aws-sdk/clients/s3';
 import { compareVersions, validate } from 'compare-versions';
-
+import _ from 'lodash';
 import type { S3Package } from './types';
 
 const Bucket = process.env.AWS_DIST_BUCKET;
