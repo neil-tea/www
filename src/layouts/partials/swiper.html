@@ -11,15 +11,11 @@
     <div class="col">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">{{- partial "package-thumbnail.html" . -}}</div>
-          <div class="swiper-slide">{{- partial "package-thumbnail.html" . -}}</div>
-          <div class="swiper-slide">{{- partial "package-thumbnail.html" . -}}</div>
-          <div class="swiper-slide">{{- partial "package-thumbnail.html" . -}}</div>
-          <div class="swiper-slide">{{- partial "package-thumbnail.html" . -}}</div>
-          <div class="swiper-slide">{{- partial "package-thumbnail.html" . -}}</div>
-          <div class="swiper-slide">{{- partial "package-thumbnail.html" . -}}</div>
-          <div class="swiper-slide">{{- partial "package-thumbnail.html" . -}}</div>
-          <div class="swiper-slide">{{- partial "package-thumbnail.html" . -}}</div>
+          {{ range $.Site.Data.packages }}
+            <div class="swiper-slide">
+            {{- partial "package-thumbnail.html" .}}
+            </div>
+          {{ end }}
         </div>
         <!--<div class="swiper-pagination"></div>-->
       </div>

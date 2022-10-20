@@ -13,30 +13,105 @@
     <!-- Start Package Grid -->
 
     <div class="row package-row black-bg g-0">
-      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
+      <div class="package-grid">
+        {{ range $.Site.Data.packages }}
+          {{- partial "package-thumbnail.html" .}}
+        {{ end }}
       </div>
-      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-      </div>
-      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-      </div>
-      <div class="col-xxl-3 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-        {{- partial "package-thumbnail.html" . -}}
-      </div>
+      
     </div>
   </div>
+  <hr>
+  <div id="loadMoreSection" class="container small">
+    <div id="loadMorePackagesBtn"><i class="icon-enter-arrow"></i> SHOW MORE</div>
+  </div>
 </section>
+
+<style>
+  .container.small {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .package-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  #loadMorePackagesBtn {
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: "pp-neue-machina", sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    padding-top: 0.279vw;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.1s linear;
+  }
+  #loadMorePackagesBtn .icon-enter-arrow {
+    display: inline-block;
+    position: relaitve;
+    transition: all 0.2s ease-in-out;
+  }
+  #loadMorePackagesBtn:hover .icon-enter-arrow{
+    display: inline-block;
+    transform: rotate(-45deg) !important;
+  }
+  #loadMoreSection.hidden {
+    display: none;
+  }
+  @media only screen and (max-width: 576px) {
+    #loadMoreSection {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 576px) {
+    .package-grid {
+      /* changes to 3 column thumbs */
+      grid-template-columns: auto auto auto;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    .package-grid {
+      /* changes to 4 column thumbs */
+      grid-template-columns: auto auto auto auto;
+    }
+  }
+
+  .card-thumbnail.hidden {
+    height: 0px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    overflow: hidden;
+  }
+</style>
+
+<script language="javascript" type="text/javascript">
+  let limit = 16;
+  const packages = document.querySelectorAll('.card-thumbnail');
+  const packagesCount = packages.length;
+
+  function refreshDisplayedPackages() {
+    for(let i = 0; i < packagesCount; i++) {
+      if (i >= limit) {
+        packages[i].classList.add('hidden');
+      } else {
+        packages[i].classList.remove('hidden');
+      }
+    }
+  }
+
+  const loadMoreButton = document.getElementById('loadMorePackagesBtn');
+  loadMoreButton.addEventListener('click',() => {
+    limit += 16;
+    refreshDisplayedPackages();
+    if (limit >= packagesCount) {
+      const loadMoreSection = document.getElementById('loadMoreSection');
+      loadMoreSection.classList.add('hidden');
+    }
+  },false);
+
+  refreshDisplayedPackages();
+</script>
